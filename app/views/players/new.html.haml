@@ -1,0 +1,13 @@
+﻿%h1 Rejestracja
+
+= form_for @player do |f|
+	%p
+		= f.label 'Nazwa postaci'
+		= f.text_field :name
+	%p
+		= f.label 'Hasło postaci'
+		= f.password_field :password
+	%p
+		= f.label 'Powtórz hasło do postaci'
+		= f.password_field :password_confirmation
+	%p= submit_tag "Zaloguj się!"

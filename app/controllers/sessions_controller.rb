@@ -1,4 +1,4 @@
-class SessionsController < ApplicationController
+﻿class SessionsController < ApplicationController
   def new
   end
   
@@ -8,14 +8,14 @@ class SessionsController < ApplicationController
       session[:player_id] = player.id
       redirect_to root_url, :notice => "Logged in!"
     else
-      flash.now.alert = "Invalid email or password"
+      flash[:notice] = "Zła nazwa postaci, bądź hasło."
       render "new"
     end
   end
   
   def destroy
     session[:player_id] = nil
-    redirect_to root_url, :notice => "Logged out!"
+    redirect_to root_url, :notice => "Wylogowany pomyślnie!"
   end
 
 end

@@ -631,3 +631,1066 @@ Rendered layouts/home/_header.html.haml (2.0ms)
 Rendered layouts/home/_side.html.haml (5.0ms)
 Rendered news/index.html.haml within layouts/application (39.0ms)
 Completed 200 OK in 92ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:46:39 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 46ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:46:54 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (42.0ms)
+Completed 200 OK in 64ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:47:48 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:47:52 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:47:57 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 48ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:48:08 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 52ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:48:15 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (0.0ms)
+Completed   in 34ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa u¿ytkownika'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag :password
+    %br
+    = password_field_tag :password
+  = submit_tag "Log in"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:48:23 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 49ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:48:31 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed   in 23ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa postaci'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag 'Has³o'
+    %br
+    = password_field_tag :password
+  = submit_tag "Log in"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:48:41 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (0.0ms)
+Completed   in 23ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+=# encoding: UTF-8
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa postaci'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag 'Has³o'
+    %br
+    = password_field_tag :password
+  = submit_tag "Log in"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:48:52 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed   in 34ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa postaci'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag 'Has³o'
+    %br
+    = password_field_tag :password
+  = submit_tag "Log in"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:48:53 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (0.0ms)
+Completed   in 23ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa postaci'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag 'Has³o'
+    %br
+    = password_field_tag :password
+  = submit_tag "Log in"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:48:57 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (0.0ms)
+Completed   in 22ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa postaci'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag 'Has³o'
+    %br
+    = password_field_tag :password
+  = submit_tag "Log in"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:51:19 +0200
+
+ArgumentError (unknown encoding name: utf8):
+  app/controllers/sessions_controller.rb:1
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:51:23 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed   in 34ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa postaci'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag 'Has³o'
+    %br
+    = password_field_tag :password
+  = submit_tag "Log in"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:51:30 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed   in 23ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa postaci'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag 'Has³o'
+    %br
+    = password_field_tag :password
+  = submit_tag "Log in"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:51:38 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (44.0ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:51:44 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 64ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:51:48 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:51:56 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:51:58 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Zaloguj siÄ™!"}
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 82ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:52:15 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 48ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:52:16 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 49ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:52:24 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:52:25 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Zaloguj siÄ™!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 16:52:25 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (99.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (129.0ms)
+Completed 200 OK in 212ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:52:44 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Zaloguj siÄ™!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 84ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:54:26 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Zaloguj siÄ™!"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 64ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:54:43 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Zaloguj siÄ™!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (7.0ms)
+Rendered sessions/new.html.haml within layouts/application (37.0ms)
+Completed 200 OK in 94ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:54:47 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Zaloguj siÄ™!"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 64ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:54:56 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Zaloguj siÄ™!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:55:22 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Zaloguj siÄ™!"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 63ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:55:24 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (0.0ms)
+Completed   in 37ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: <h1>Sign Up</h1>
+    2: 
+    3: <%= form_for @player do |f| %>
+    4:   <% if @player.errors.any? %>
+    5: 	<div class="error_messages">
+    6: 	  <h2>Form is invalid</h2>
+    7: 	  <ul>
+  app/views/players/new.html.haml:4
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:57:48 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (0.0ms)
+Completed   in 45ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+    2: 
+    3: = form_for @player do |f|
+    4:   -if @player.errors.any?
+    5: 	%div.error_messages
+    6: 	  %h1 Form is invalid
+    7: 	  %ul
+    8: 		-for message in @player.errors.full_messages
+  app/views/players/new.html.haml:5
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:57:57 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 36ms
+
+ActionView::Template::Error (Inconsistent indentation: 2 tabs were used for indentation, but the rest of the document was indented using 2 spaces.):
+    2: 
+    3: = form_for @player do |f|
+    4:   -if @player.errors.any?
+    5: 		%div.error_messages
+    6: 			%h1 Form is invalid
+    7: 			%ul
+    8: 			-for message in @player.errors.full_messages
+  app/views/players/new.html.haml:5
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:58:13 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 36ms
+
+ActionView::Template::Error (Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.):
+    7: 		%ul
+    8: 		-for message in @player.errors.full_messages
+    9: 			%li= message
+    10:   %p
+    11: 		= f.label :name
+    12: 		= f.text_field :name
+    13: 	%p
+  app/views/players/new.html.haml:10
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:58:22 +0200
+  Processing by PlayersController#new as HTML
+ERROR: compiling _app_views_players_new_html_haml__504849797_42657876__163946295 RAISED c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/players/new.html.haml:21: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/players/new.html.haml:24: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_players_new_html_haml__504849797_42657876__163946295(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "players/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Rejestracja</h1>\n", 0, false);
+
+haml_temp =  form_for @player do |f|
+if @player.errors.any?
+_hamlout.push_text("<div class='error_messages'>\n  <h1>Form is invalid</h1>\n  <ul></ul>\n", 1, false);
+
+
+for message in @player.errors.full_messages
+_hamlout.push_text("  <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((message
+));}</li>\n", 0, false);end
+_hamlout.push_text("</div>\n<p>\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.label :name
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :name
+));}\n</p>\n<p>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :password
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.password_field :password
+));}\n</p>\n<p>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :password_confirmation
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.password_field :password_confirmation
+));}\n</p>\n<p class='button'>#{_hamlout.format_script_false_true_false_true_false_true_false((f.submit
+));}</p>\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.1.1/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:436:in `_run__208668637__process_action__701436609__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2/lib/sass/plugin/rack.rb:54:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered players/new.html.haml within layouts/application (3.0ms)
+Completed   in 39ms
+
+ActionView::Template::Error (c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/players/new.html.haml:21: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/players/new.html.haml:24: syntax error, unexpected $end, expecting keyword_end):
+    18: 		= f.password_field :password_confirmation
+    19: 	%p.button= f.submit
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:58:34 +0200
+  Processing by PlayersController#new as HTML
+ERROR: compiling _app_views_players_new_html_haml__504849797_42824784__163946295 RAISED c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/players/new.html.haml:21: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/players/new.html.haml:24: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_players_new_html_haml__504849797_42824784__163946295(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "players/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Rejestracja</h1>\n", 0, false);
+
+haml_temp =  form_for @player do |f|
+if @player.errors.any?
+_hamlout.push_text("<div class='error_messages'>\n  <h1>Form is invalid</h1>\n  <ul></ul>\n", 1, false);
+
+
+for message in @player.errors.full_messages
+_hamlout.push_text("  <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((message
+));}</li>\n", 0, false);end
+_hamlout.push_text("</div>\n<p>\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.label :name
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.text_field :name
+));}\n</p>\n<p>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :password
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.password_field :password
+));}\n</p>\n<p>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.label :password_confirmation
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( f.password_field :password_confirmation
+));}\n</p>\n#{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.1.1/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:436:in `_run__208668637__process_action__701436609__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2/lib/sass/plugin/rack.rb:54:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered players/new.html.haml within layouts/application (3.0ms)
+Completed   in 39ms
+
+ActionView::Template::Error (c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/players/new.html.haml:21: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/players/new.html.haml:24: syntax error, unexpected $end, expecting keyword_end):
+    18: 		= f.password_field :password_confirmation
+    19: 	= f.submit
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:59:17 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 74ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+    2: 
+    3: = form_for @player do |f|
+    4:   -#if @player.errors.any?
+    5: 	-#for message in @player.errors.full_messages
+    6:   %p
+    7: 		= f.label :name
+    8: 		= f.text_field :name
+  app/views/players/new.html.haml:5
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:59:29 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (0.0ms)
+Completed   in 36ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: %h1 Rejestracja
+    2: 
+    3:   -#if @player.errors.any?
+    4: 	-#for message in @player.errors.full_messages
+    5: = form_for @player do |f|
+    6:   %p
+  app/views/players/new.html.haml:3
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:59:36 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 36ms
+
+ActionView::Template::Error (Inconsistent indentation: 2 tabs were used for indentation, but the rest of the document was indented using 2 spaces.):
+    2: 
+    3: = form_for @player do |f|
+    4:   %p
+    5: 		= f.label :name
+    6: 		= f.text_field :name
+    7: 	%p
+    8: 		= f.label :password
+  app/views/players/new.html.haml:5
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:59:42 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered players/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 66ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:59:52 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 36ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: %h1 Rejestracja
+    2: 	-#if @player.errors.any?
+    3: 	-#for message in @player.errors.full_messages
+    4: = form_for @player do |f|
+    5: 	%p
+  app/views/players/new.html.haml:2
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:59:57 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (41.0ms)
+Completed 200 OK in 94ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:00:52 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 44ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+    2: 
+    3: = form_for @player do |f|
+    4:   -if @player.errors.any?
+    5: 	%div.error_messages
+    6: 	  %h1 Form is invalid
+    7: 	  %ul
+    8: 		-for message in @player.errors.full_messages
+  app/views/players/new.html.haml:5
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:00:56 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 37ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+    2: 
+    3: = form_for @player do |f|
+    4:   -if @player.errors.any?
+    5: 	%div.error_messages
+    6: 	  %h1 Form is invalid
+    7: 	  %ul
+    8: 		-for message in @player.errors.full_messages
+  app/views/players/new.html.haml:5
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:01:03 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 37ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+    2: 
+    3: = form_for @player do |f|
+    4:   -if @player.errors.any?
+    5: 	%div.error_messages
+    6: 	  %h1 Form is invalid
+    7: 	  %ul
+    8: 		-for message in @player.errors.full_messages
+  app/views/players/new.html.haml:5
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:01:08 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 36ms
+
+ActionView::Template::Error (Inconsistent indentation: 2 tabs were used for indentation, but the rest of the document was indented using 2 spaces.):
+    2: 
+    3: = form_for @player do |f|
+    4:   %p
+    5: 		= f.label :name
+    6: 		= f.text_field :name
+    7: 	%p
+    8: 		= f.label :password
+  app/views/players/new.html.haml:5
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:01:14 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 66ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:03:19 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.haml within layouts/application (1.0ms)
+Completed   in 55ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Rejestracja
+
+= form_for @player do |f|
+	%p
+		= f.label 'Nazwa postaci'
+		= f.text_field :name
+	%p
+		= f.label 'Has³o postaci'
+		= f.password_field :password
+	%p
+		= f.label 'Powtórz has³o do postaci'
+		= f.password_field :password_confirmation
+	%p):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:03:25 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (52.0ms)
+Completed 200 OK in 88ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:03:38 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (50.0ms)
+Completed 200 OK in 87ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-10-17 17:03:39 +0200
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"âœ“", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "player"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Zaloguj siÄ™!"}
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = '') LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 152ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:06:49 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 67ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:07:35 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered players/new.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 67ms (Views: 54.0ms | ActiveRecord: 0.0ms)

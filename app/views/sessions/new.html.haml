@@ -1,0 +1,12 @@
+﻿%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa postaci'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag 'Hasło'
+    %br
+    = password_field_tag :password
+  = submit_tag "Zaloguj się!"
