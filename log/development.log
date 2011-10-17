@@ -384,3 +384,250 @@ Started GET "/?_=1318860064948&page=1" for 127.0.0.1 at 2011-10-17 16:01:04 +020
 Rendered news/_news.html.haml (12.0ms)
 Rendered news/index.js.erb (18.0ms)
 Completed 200 OK in 92ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateNews (20110605091358)
+Migrating to CreateSlugs (20110605091656)
+Migrating to CreatePlayers (20111017142439)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.0ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "password_hash" varchar(255), "password_salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111017142439')
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("news")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("players")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("slugs")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_info('index_slugs_on_n_s_s_and_s')[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_info('index_slugs_on_sluggable_id')
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 16:27:47 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (182.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (211.0ms)
+Completed 200 OK in 273ms (Views: 230.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 16:30:30 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (31.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (59.0ms)
+Completed 200 OK in 93ms (Views: 79.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:30:32 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 16:43:46 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 73ms (Views: 59.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:43:48 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:43:50 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "email"=>"dasas", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 96ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:43:51 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "email"=>"dasas", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 59ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:43:53 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 57ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:43:55 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.erb within layouts/application (1.0ms)
+Completed   in 44ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <h1>Sign Up</h1>
+    2: 
+    3: <%= form_for @user do |f| %>
+    4:   <% if @user.errors.any? %>
+    5: 	<div class="error_messages">
+    6: 	  <h2>Form is invalid</h2>
+  app/views/players/new.html.erb:3:in `_app_views_players_new_html_erb___1067607257_48453696_99582950'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:44:13 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.erb within layouts/application (1.0ms)
+Completed   in 33ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <h1>Sign Up</h1>
+    2: 
+    3: <%= form_for @user do |f| %>
+    4:   <% if @user.errors.any? %>
+    5: 	<div class="error_messages">
+    6: 	  <h2>Form is invalid</h2>
+  app/views/players/new.html.erb:3:in `_app_views_players_new_html_erb___1067607257_47885688_99582950'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:44:17 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 78ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:44:19 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"dsas", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'dsas' LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 64ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:44:40 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 58ms (Views: 42.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:44:41 +0200
+  Processing by PlayersController#new as HTML
+Rendered players/new.html.erb within layouts/application (9.0ms)
+Completed   in 53ms
+
+ActionView::Template::Error (undefined method `players_path' for #<#<Class:0x3ecf298>:0x3ece110>):
+    1: <h1>Sign Up</h1>
+    2: 
+    3: <%= form_for @player do |f| %>
+    4:   <% if @player.errors.any? %>
+    5: 	<div class="error_messages">
+    6: 	  <h2>Form is invalid</h2>
+  app/views/players/new.html.erb:3:in `_app_views_players_new_html_erb___1067607257_32910336_99582950'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 16:44:52 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 81ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-10-17 16:44:57 +0200
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "player"=>{"name"=>"Bangeusz", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Utwórz Player"}
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "players" ("name", "password_hash", "password_salt", "created_at", "updated_at") VALUES ('Bangeusz', '$2a$10$YzQE2e7Yo5rgGCW2.9E9NufCBF8Q1yPHOqkjo1IJqeIXSLofBVJ8i', '$2a$10$YzQE2e7Yo5rgGCW2.9E9Nu', '2011-10-17 14:44:58.092940', '2011-10-17 14:44:58.092940')
+Redirected to http://localhost:3000/
+Completed 302 Found in 232ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 16:44:58 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (31.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (58.0ms)
+Completed 200 OK in 92ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 16:45:00 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 16:45:05 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"Bangeusz", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Bangeusz' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 105ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 16:45:05 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (39.0ms)
+Completed 200 OK in 92ms (Views: 58.0ms | ActiveRecord: 1.0ms)

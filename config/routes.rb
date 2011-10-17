@@ -1,5 +1,9 @@
 Bsrp::Application.routes.draw do
 
+  # Resources
+  resources :players
+  resources :sessions
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -12,6 +16,11 @@ Bsrp::Application.routes.draw do
   
   # Newsy
   match 'news/:cached_slug' => 'news#show', :as => :show
+
+  # Konta
+  match 'konto/rejestracja' => 'players#new', :as => :register
+  match 'konto/logowanie' => 'sessions#new', :as => :login
+  match 'konto/wyloguj' => 'sessions#destroy', :as => :logout
 
   # Podstrony
   match 'administracja' => 'home#admins', :as => :admins
