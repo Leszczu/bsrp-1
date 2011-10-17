@@ -21,6 +21,7 @@ Bsrp::Application.routes.draw do
   match 'konto/rejestracja' => 'players#new', :as => :register
   match 'konto/logowanie' => 'sessions#new', :as => :login
   match 'konto/wyloguj' => 'sessions#destroy', :as => :logout
+  match 'konto/:cached_slug' => 'player#show', :as => :playershow
 
   # Podstrony
   match 'administracja' => 'home#admins', :as => :admins

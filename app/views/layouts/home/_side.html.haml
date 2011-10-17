@@ -7,10 +7,16 @@
   %li= link_to 'Administracja', admins_path
   %li= link_to 'Kontakt', contact_path
 %p.header Panel Gracza
-%ul
-  %li= link_to 'Zaloguj się', root_path
-  %li= link_to 'Stwórz postać', root_path
-  %li= link_to 'Zagubione hasło', root_path
+-if !current_player
+  %ul
+    %li= link_to 'Zaloguj się', root_path
+    %li= link_to 'Stwórz postać', root_path
+    %li= link_to 'Zagubione hasło', root_path
+-else
+  %ul
+    %li= link_to 'Kokpit gracza', root_path
+    %li= link_to 'Ustawienia postaci', root_path
+    %li= link_to 'Wyloguj się', logout_path
 %p.header Bądź na bieżąco!
 = link_to image_tag("icons/max_feed.png"), root_path
 = image_tag("icons/facebook.png")

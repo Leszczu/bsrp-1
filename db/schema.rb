@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20111017142439) do
 
   create_table "news", :force => true do |t|
     t.string   "title"
-    t.integer  "user_id"
+    t.integer  "player_id"
     t.text     "intro"
     t.text     "body"
     t.string   "cached_slug"

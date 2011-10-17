@@ -1,6 +1,6 @@
 class Player < ActiveRecord::Base
 	attr_accessible :name, :password, :password_confirmation
-	
+	has_friendly_id :name, :use_slug => true
 	attr_accessor :password
 	before_save :encrypt_password
 	

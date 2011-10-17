@@ -2,7 +2,7 @@
   %h1= news.title
   %p<>
     Dodał
-    =link_to news.user_id, root_path
+    =link_to news.player.name, playershow_path(news.player)
     |
     Dodane
     =time_ago_in_words(news.created_at)
