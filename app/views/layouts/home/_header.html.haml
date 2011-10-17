@@ -1,12 +1,25 @@
 #title Bayside Role Play
 #welcome_box
-  Jesteś niezalogowany. Możesz
-  %strong<>
-    &nbsp;
-    =link_to 'zalogować się', login_path
-  \,  
-  bądź
-  %strong<>
-    &nbsp;
-    =link_to 'stworzyć nową postać', register_path
-  \.
+  -if !current_player
+    Jesteś niezalogowany. Możesz
+    %strong<>
+      &nbsp;
+      =link_to 'zalogować się', login_path
+    \,  
+    bądź
+    %strong<>
+      &nbsp;
+      =link_to 'stworzyć nową postać', register_path
+    \.
+  -else
+    Zalogowany jako
+    %strong<>
+      &nbsp;
+      =link_to current_player.name
+    \.
+    Twoje konto premium jest aktywne.
+    |
+    %strong<>
+      &nbsp;
+      =link_to 'Wyloguj się', logout_path
+    \.

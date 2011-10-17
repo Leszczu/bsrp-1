@@ -1694,3 +1694,1181 @@ Rendered layouts/home/_header.html.haml (2.0ms)
 Rendered layouts/home/_side.html.haml (4.0ms)
 Rendered players/new.html.haml within layouts/application (31.0ms)
 Completed 200 OK in 67ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:15:26 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (148.0ms)
+Completed 200 OK in 181ms (Views: 167.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:15:39 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 61ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:15:42 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered players/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 63ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:16:00 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 62ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:16:03 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered players/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 62ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:16:05 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 64ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:16:15 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 62ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:16:24 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (7.0ms)
+Rendered players/new.html.haml within layouts/application (44.0ms)
+Completed 200 OK in 94ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:16:27 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 62ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:16:34 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 44ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:16:35 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 62ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:16:49 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 87ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:16:57 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 82ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:17:10 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 62ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-10-17 17:17:26 +0200
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "player"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Stwórz postać!"}
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = '') LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 128ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:17:29 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:17:31 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered players/new.html.haml within layouts/application (51.0ms)
+Completed 200 OK in 85ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:17:52 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (25.0ms)
+Rendered players/new.html.haml within layouts/application (51.0ms)
+Completed 200 OK in 100ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:17:53 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (7.0ms)
+Completed   in 26ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x4b16080>:0x4b15000>):
+    3: = form_tag sessions_path do
+    4:   %table
+    5:     %tr
+    6:       %td= f.label 'Imię oraz nazwisko postaci'
+    7:       %td= f.text_field :name
+    8:     %tr
+    9:       %td= f.label 'Hasło postaci'
+  app/views/sessions/new.html.haml:6:in `block in _app_views_sessions_new_html_haml___521789792_39362952_600705477'
+  app/views/sessions/new.html.haml:3:in `_app_views_sessions_new_html_haml___521789792_39362952_600705477'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:18:06 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (4.0ms)
+Completed   in 33ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 2)):
+    3: = form_tag sessions_path do
+    4:   %table
+    5:     %tr
+    6:       %td= label 'Imię oraz nazwisko postaci'
+    7:       %td= text_field :name
+    8:     %tr
+    9:       %td= label 'Hasło postaci'
+  app/views/sessions/new.html.haml:6:in `block in _app_views_sessions_new_html_haml___521789792_39997536_600705477'
+  app/views/sessions/new.html.haml:3:in `_app_views_sessions_new_html_haml___521789792_39997536_600705477'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:18:58 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed   in 20ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %table
+    %tr
+      %td= f.label 'Imi� oraz nazwisko postaci'
+      %td= f.text_field_tag :name, params[:name]
+    %tr
+      %td= f.label 'Has�o postaci'
+      %td= f.password_field :password
+    %td= submit_tag "Stw�rz posta�!"sword
+  = submit_tag "Log in"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:19:02 +0200
+  Processing by SessionsController#new as HTML
+ERROR: compiling _app_views_sessions_new_html_haml___521789792_31196148_600705477 RAISED c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/sessions/new.html.haml:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+Function body:           def _app_views_sessions_new_html_haml___521789792_31196148_600705477(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "sessions/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Logowanie</h1>\n", 0, false);
+
+haml_temp =  form_tag sessions_path do
+_hamlout.push_text("<table>\n  <tr>\n    <td>#{_hamlout.adjust_tabs(3); 
+
+_hamlout.format_script_false_true_false_true_false_true_false((f.label 'Imię oraz nazwisko postaci'
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((f.text_field_tag :name, params[:name]
+));}</td>\n  </tr>\n  <tr>\n    <td>#{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_true_false_true_false_true_false((f.label 'Hasło postaci'
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((f.password_field :password
+));}</td>\n  </tr>\n  <td>#{_hamlout.format_script_false_true_false_true_false_true_false((submit_tag "Stwórz postać!"sword
+));}</td>\n</table>\n#{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_true_false_true_false(( submit_tag "Log in"
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.1.1/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:436:in `_run__738689235__process_action__818704211__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2/lib/sass/plugin/rack.rb:54:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered sessions/new.html.haml within layouts/application (4.0ms)
+Completed   in 33ms
+
+ActionView::Template::Error (c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/sessions/new.html.haml:11: syntax error, unexpected tIDENTIFIER, expecting ')'):
+    8:     %tr
+    9:       %td= f.label 'Hasło postaci'
+    10:       %td= f.password_field :password
+    11:     %td= submit_tag "Stwórz postać!"sword
+    12:   = submit_tag "Log in"
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:19:07 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (6.0ms)
+Completed   in 27ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x4c4aee8>:0x4c49ef8>):
+    3: = form_tag sessions_path do
+    4:   %table
+    5:     %tr
+    6:       %td= f.label 'Imię oraz nazwisko postaci'
+    7:       %td= f.text_field_tag :name, params[:name]
+    8:     %tr
+    9:       %td= f.label 'Hasło postaci'
+  app/views/sessions/new.html.haml:6:in `block in _app_views_sessions_new_html_haml___521789792_39974664_600705477'
+  app/views/sessions/new.html.haml:3:in `_app_views_sessions_new_html_haml___521789792_39974664_600705477'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:19:13 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (3.0ms)
+Completed   in 22ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 2)):
+    3: = form_tag sessions_path do
+    4:   %table
+    5:     %tr
+    6:       %td= label 'Imię oraz nazwisko postaci'
+    7:       %td= text_field_tag :name, params[:name]
+    8:     %tr
+    9:       %td= label 'Hasło postaci'
+  app/views/sessions/new.html.haml:6:in `block in _app_views_sessions_new_html_haml___521789792_40309284_600705477'
+  app/views/sessions/new.html.haml:3:in `_app_views_sessions_new_html_haml___521789792_40309284_600705477'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:19:23 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (3.0ms)
+Completed   in 27ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 2)):
+    3: = form_tag sessions_path do
+    4:   %table
+    5:     %tr
+    6:       %td= label 'Imię oraz nazwisko postaci'
+    7:       %td= text_field_tag :name
+    8:     %tr
+    9:       %td= label 'Hasło postaci'
+  app/views/sessions/new.html.haml:6:in `block in _app_views_sessions_new_html_haml___521789792_28642248_600705477'
+  app/views/sessions/new.html.haml:3:in `_app_views_sessions_new_html_haml___521789792_28642248_600705477'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (20.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:19:30 +0200
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (0.0ms)
+Completed   in 20ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Logowanie
+
+= form_tag sessions_path do
+  %p
+    = label_tag 'Nazwa postaci'
+    %br
+    = text_field_tag :name, params[:name]
+  %p
+    = label_tag 'Has�o'
+    %br
+    = password_field_tag :password
+  = submit_tag "Log in"
+  
+):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:19:33 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 44ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:20:19 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 44ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:20:27 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (60.0ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 17:20:29 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Stwórz postać!"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (60.0ms)
+Completed 200 OK in 121ms (Views: 83.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 17:20:36 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"", "password"=>"[FILTERED]", "commit"=>"Stwórz postać!"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = '' LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 68ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:20:46 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (29.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (58.0ms)
+Completed 200 OK in 129ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:20:47 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (52.0ms)
+Completed 200 OK in 91ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:20:49 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (16.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (7.0ms)
+Rendered news/index.html.haml within layouts/application (59.0ms)
+Completed 200 OK in 108ms (Views: 88.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:20:50 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered sessions/new.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:20:51 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 97ms (Views: 59.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:20:51 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered players/new.html.haml within layouts/application (50.0ms)
+Completed 200 OK in 85ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:20:53 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 17:20:55 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 71ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:20:56 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 100ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:21:39 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (21.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (59.0ms)
+Completed 200 OK in 103ms (Views: 82.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:21:45 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (12.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (87.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (126.0ms)
+Completed 200 OK in 160ms (Views: 146.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:21:54 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (30.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (76.0ms)
+Completed 200 OK in 110ms (Views: 96.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:22:00 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (21.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (59.0ms)
+Completed 200 OK in 92ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:22:16 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (30.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (77.0ms)
+Completed 200 OK in 111ms (Views: 97.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:22:21 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (66.0ms)
+Completed 200 OK in 116ms (Views: 95.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:22:31 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (30.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (146.0ms)
+Completed 200 OK in 181ms (Views: 165.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:22:44 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (12.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (21.0ms)
+Rendered news/index.html.haml within layouts/application (49.0ms)
+Completed   in 83ms
+
+ActionView::Template::Error (undefined method `+@' for " ":String):
+    13:     \.
+    14:   -else
+    15:     Witaj,
+    16:     =+' '
+    17:     =current_player.name
+    18:     %strong<>
+    19:       &nbsp;
+  app/views/layouts/home/_header.html.haml:16:in `_app_views_layouts_home__header_html_haml___803406255_31209024_605228366'
+  app/views/layouts/application.html.haml:18:in `_app_views_layouts_application_html_haml___513582335_40285236_600705477'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (32.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (59.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:22:48 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (12.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (48.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (86.0ms)
+Completed 200 OK in 121ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:22:59 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 98ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:23:10 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (31.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (21.0ms)
+Rendered news/index.html.haml within layouts/application (100.0ms)
+Completed   in 133ms
+
+ActionView::Template::Error (undefined method `+@' for " ":String):
+    13:     \.
+    14:   -else
+    15:     Zalogowany jako
+    16:     =+' ' +current_player.name
+    17:     %strong<>
+    18:       &nbsp;
+    19:       =link_to 'zalogować się', login_path
+  app/views/layouts/home/_header.html.haml:16:in `_app_views_layouts_home__header_html_haml___803406255_40787940_605228366'
+  app/views/layouts/application.html.haml:18:in `_app_views_layouts_application_html_haml___513582335_39653772_600705477'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:23:16 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 119ms (Views: 83.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:23:26 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (12.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (80.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (118.0ms)
+Completed 200 OK in 159ms (Views: 138.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:23:42 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 99ms (Views: 84.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:23:46 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (31.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (85.0ms)
+Completed 200 OK in 135ms (Views: 114.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:23:56 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (12.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_side.html.haml (27.0ms)
+Rendered news/index.html.haml within layouts/application (136.0ms)
+Completed 200 OK in 173ms (Views: 159.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:24:19 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (12.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (67.0ms)
+Completed 200 OK in 127ms (Views: 89.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:25:50 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (30.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (86.0ms)
+Completed 200 OK in 123ms (Views: 109.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:07 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (12.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (48.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (89.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:15 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (17.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (34.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (89.0ms)
+Completed 200 OK in 167ms (Views: 122.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:22 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (17.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered layouts/home/_header.html.haml (51.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (106.0ms)
+Completed 200 OK in 160ms (Views: 139.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:26 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+Rendered layouts/home/_header.html.haml (1.0ms)
+Rendered news/index.html.haml within layouts/application (30.0ms)
+Completed   in 137ms
+
+ActionView::Template::Error (Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.):
+    17:     %strong<>
+    18:       &nbsp;
+    19:       =link_to 'kokpicie', login_path
+    20:      Twoje konto premium jest nieaktywne.
+  app/views/layouts/home/_header.html.haml:20
+  app/views/layouts/application.html.haml:18:in `_app_views_layouts_application_html_haml___513582335_41324712_600705477'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:28 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (16.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (38.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (94.0ms)
+Completed 200 OK in 174ms (Views: 128.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:32 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (48.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (89.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:39 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (2.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (67.0ms)
+Completed 200 OK in 128ms (Views: 89.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:50 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (80.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (120.0ms)
+Completed 200 OK in 156ms (Views: 142.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:59 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (67.0ms)
+Completed 200 OK in 106ms (Views: 90.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:26:59 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (81.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (121.0ms)
+Completed 200 OK in 157ms (Views: 143.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:28:54 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (48.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (89.0ms)
+Completed 200 OK in 125ms (Views: 111.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:29:05 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (68.0ms)
+Completed 200 OK in 124ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:29:18 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (87.0ms)
+Completed 200 OK in 129ms (Views: 109.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:30:16 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (47.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (88.0ms)
+Completed 200 OK in 133ms (Views: 112.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:30:16 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (33.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (120.0ms)
+Completed 200 OK in 158ms (Views: 143.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:30:20 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (67.0ms)
+Completed 200 OK in 103ms (Views: 89.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:31:00 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (31.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (86.0ms)
+Completed 200 OK in 123ms (Views: 108.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:31:05 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_side.html.haml (19.0ms)
+Rendered news/index.html.haml within layouts/application (134.0ms)
+Completed 200 OK in 172ms (Views: 156.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:31:21 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (31.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (104.0ms)
+Completed 200 OK in 140ms (Views: 126.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:31:38 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (66.0ms)
+Completed 200 OK in 123ms (Views: 88.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:31:48 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (47.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (88.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:31:52 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (69.0ms)
+Completed 200 OK in 135ms (Views: 92.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:31:55 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (48.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (88.0ms)
+Completed 200 OK in 124ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:31:58 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (68.0ms)
+Completed 200 OK in 124ms (Views: 89.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:32:04 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (48.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (89.0ms)
+Completed 200 OK in 126ms (Views: 111.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:32:13 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (28.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (68.0ms)
+Completed 200 OK in 105ms (Views: 90.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/wyloguj" for 127.0.0.1 at 2011-10-17 17:32:15 +0200
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:32:15 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (12.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (43.0ms)
+Completed 200 OK in 98ms (Views: 65.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:32:17 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (11.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (44.0ms)
+Completed 200 OK in 102ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 17:32:18 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 58ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 17:32:21 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"Bangeusz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Bangeusz' LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 131ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 17:32:23 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jbLCMx2reC3d6OKyWlWx2N0Ac9LxtpdsSQj7YLs2ty8=", "name"=>"Bangeusz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Bangeusz' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 78ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:32:23 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (66.0ms)
+Completed 200 OK in 140ms (Views: 88.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/konto/wyloguj" for 127.0.0.1 at 2011-10-17 17:32:27 +0200
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:32:27 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+Rendered news/_news.html.haml (11.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (65.0ms)
+Completed 200 OK in 101ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 17:32:28 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+Rendered news/_news.html.haml (12.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (44.0ms)
+Completed 200 OK in 97ms (Views: 76.0ms | ActiveRecord: 1.0ms)

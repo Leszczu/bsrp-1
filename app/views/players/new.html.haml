@@ -1,13 +1,14 @@
 ﻿%h1 Rejestracja
 
 = form_for @player do |f|
-	%p
-		= f.label 'Nazwa postaci'
-		= f.text_field :name
-	%p
-		= f.label 'Hasło postaci'
-		= f.password_field :password
-	%p
-		= f.label 'Powtórz hasło do postaci'
-		= f.password_field :password_confirmation
-	%p= submit_tag "Zaloguj się!"
+	%table
+		%tr
+			%td= f.label 'Imię oraz nazwisko postaci'
+			%td= f.text_field :name
+		%tr
+			%td= f.label 'Hasło postaci'
+			%td= f.password_field :password
+		%tr
+			%td= f.label 'Poprawność hasła postaci'
+			%td= f.password_field :password_confirmation
+		%td= submit_tag "Stwórz postać!"
