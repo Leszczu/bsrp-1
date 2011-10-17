@@ -7,7 +7,7 @@ gem "friendly_id", "~> 3.1"
 gem 'will_paginate', '3.0.pre2'
 gem 'jquery-rails'
 gem "bcrypt-ruby", :require => "bcrypt"
-# if Rake::DSL
+# if Rake::DSL :)
 # bundle update rake gem "rake", "0.8.7"
 
 # Bundle edge Rails instead:
