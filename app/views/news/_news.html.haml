@@ -1,0 +1,17 @@
+-@news.each do |news|
+  %h1= news.title
+  %p<>
+    Dodał
+    =link_to news.user_id, root_path
+    |
+    Dodane
+    =time_ago_in_words(news.created_at)
+    temu
+  %p= news.intro
+  %p.breadcrumb
+    =link_to 'Przeczytaj całość', show_path(news.cached_slug)
+    |
+    =link_to "Przeczytaj komentarze", show_path(news.cached_slug)+'#comments'
+  %br
+  =#(#{news.comment.size})
+%div.left= paginate @news

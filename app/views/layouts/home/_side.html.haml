@@ -1,0 +1,19 @@
+%p.header Bayside Role Play
+%ul
+  %li= link_to 'Strona Główna', root_path
+  %li= link_to 'Forum', 'forum'
+  %li= link_to 'Ostatnie zmiany', last_changes_path
+  %li= link_to 'Organizacje', organizations_path
+  %li= link_to 'Administracja', admins_path
+  %li= link_to 'Kontakt', contact_path
+%p.header Panel Gracza
+%ul
+  %li= link_to 'Zaloguj się', root_path
+  %li= link_to 'Stwórz postać', root_path
+  %li= link_to 'Zagubione hasło', root_path
+%p.header Bądź na bieżąco!
+= link_to image_tag("icons/max_feed.png"), root_path
+= image_tag("icons/facebook.png")
+= link_to image_tag("icons/twitter.png"), 'http://twitter.com/BaysideMarina'
+= image_tag("icons/blip.png")
+

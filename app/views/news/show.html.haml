@@ -1,0 +1,26 @@
+-title @news.title+' - Bayside Role Play'
+%h1= @news.title
+%p<>
+  Dodał
+  =link_to @news.user_id, root_path
+  |
+  Dodane
+  =time_ago_in_words(@news.created_at)
+  temu.
+%p= @news.intro
+%p= @news.body
+%p.breadcrumb
+  =link_to 'Powrót do poprzeniej strony', 'javascript:history.back(-1)'
+  |
+  =link_to 'Drukuj', 'javascript:window.print();'
+/%h2 Komentarze
+=# render :partial => @news.comment, :locals => { :list => true }
+/#comments
+/#notice
+/  .form
+/    -form_for @comment, :remote => true do |f|
+/      =f.hidden_field :news_id
+/      =f.text_area :body, :cols => 72, :rows => 8
+/      %br
+/      =f.submit "Dodaj komentarz"
+
