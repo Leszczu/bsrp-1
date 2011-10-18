@@ -5886,3 +5886,553 @@ Rendered layouts/home/_header.html.haml (3.0ms)
 Rendered layouts/home/_side.html.haml (5.0ms)
 Rendered news/index.html.haml within layouts/application (104.0ms)
 Completed 200 OK in 142ms (Views: 127.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 18:18:23 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (180.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (25.0ms)
+Rendered news/index.html.haml within layouts/application (324.0ms)
+Completed 200 OK in 419ms (Views: 345.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 18:18:27 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (71.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (105.0ms)
+Completed 200 OK in 144ms (Views: 126.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-10-17 18:18:29 +0200
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (87.0ms)
+Completed 200 OK in 137ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 18:18:33 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (71.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (104.0ms)
+Completed 200 OK in 150ms (Views: 127.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/organizacje" for 127.0.0.1 at 2011-10-17 18:18:34 +0200
+  Processing by HomeController#organizations as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (38.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered home/organizations.html.haml within layouts/application (61.0ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/administracja" for 127.0.0.1 at 2011-10-17 18:18:35 +0200
+  Processing by HomeController#admins as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (38.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered home/admins.html.haml within layouts/application (61.0ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kontakt" for 127.0.0.1 at 2011-10-17 18:18:36 +0200
+  Processing by HomeController#contact as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (38.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered home/contact.html.haml within layouts/application (61.0ms)
+Completed 200 OK in 84ms (Views: 81.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 18:18:36 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (70.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (103.0ms)
+Completed 200 OK in 140ms (Views: 124.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 18:18:38 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (87.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (120.0ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/samuel-diaz" for 127.0.0.1 at 2011-10-17 18:19:57 +0200
+
+ActionController::RoutingError (uninitialized constant PlayerController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 19:13:39 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (263.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (0.0ms)
+Rendered news/index.html.haml within layouts/application (289.0ms)
+Completed 200 OK in 475ms (Views: 329.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 19:13:49 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (9.0ms)
+Rendered sessions/new.html.haml within layouts/application (39.0ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 19:13:50 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/qCm7GCEn1K9gdPBZYgQ4S9hM2mPnZc13yeg/Ma+M=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 92ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 19:13:50 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (50.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (82.0ms)
+Completed 200 OK in 136ms (Views: 101.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/samuel-diaz" for 127.0.0.1 at 2011-10-17 19:14:25 +0200
+
+ActionController::RoutingError (uninitialized constant PlayerController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 19:14:27 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (84.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (116.0ms)
+Completed 200 OK in 160ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/organizacje" for 127.0.0.1 at 2011-10-17 19:14:29 +0200
+  Processing by HomeController#organizations as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (37.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered home/organizations.html.haml within layouts/application (61.0ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 19:14:31 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (70.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (103.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?page=2&_=1318871816961" for 127.0.0.1 at 2011-10-17 19:16:57 +0200
+  Processing by NewsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1318871816961"}
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (69.0ms)
+Rendered news/index.js.erb (76.0ms)
+Completed 200 OK in 130ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?_=1318871818355&page=1" for 127.0.0.1 at 2011-10-17 19:16:58 +0200
+  Processing by NewsController#index as JS
+  Parameters: {"_"=>"1318871818355", "page"=>"1"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (49.0ms)
+Rendered news/index.js.erb (55.0ms)
+Completed 200 OK in 156ms (Views: 133.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-10-17 19:18:06 +0200
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (87.0ms)
+Completed 200 OK in 128ms (Views: 107.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 19:18:09 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (69.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (103.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 19:18:10 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (88.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (121.0ms)
+Completed 200 OK in 158ms (Views: 141.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 19:18:11 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (87.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (120.0ms)
+Completed 200 OK in 157ms (Views: 142.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/organizacje" for 127.0.0.1 at 2011-10-17 19:28:32 +0200
+  Processing by HomeController#organizations as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (38.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered home/organizations.html.haml within layouts/application (61.0ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 19:28:32 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (70.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (103.0ms)
+Completed 200 OK in 139ms (Views: 124.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-10-17 19:28:40 +0200
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (66.0ms)
+Completed 200 OK in 128ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/samuel-diaz" for 127.0.0.1 at 2011-10-17 20:17:33 +0200
+
+ActionController::RoutingError (uninitialized constant PlayerController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/konto/wyloguj" for 127.0.0.1 at 2011-10-17 20:17:36 +0200
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 20:17:36 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (86.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (118.0ms)
+Completed 200 OK in 156ms (Views: 140.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-17 20:17:38 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (33.0ms)
+Completed 200 OK in 98ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 20:17:39 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (50.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (83.0ms)
+Completed 200 OK in 142ms (Views: 103.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-10-17 20:49:54 +0200
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/show.html.haml within layouts/application (66.0ms)
+Completed 200 OK in 143ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 20:49:56 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (103.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (135.0ms)
+Completed 200 OK in 171ms (Views: 155.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 20:50:13 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (69.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (102.0ms)
+Completed 200 OK in 139ms (Views: 123.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-17 20:50:17 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-17 20:50:18 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/qCm7GCEn1K9gdPBZYgQ4S9hM2mPnZc13yeg/Ma+M=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 120ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 20:50:18 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (105.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (138.0ms)
+Completed 200 OK in 175ms (Views: 159.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/konto/samuel-diaz" for 127.0.0.1 at 2011-10-17 21:05:42 +0200
+
+ActionController::RoutingError (uninitialized constant PlayerController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 21:21:58 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (70.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (106.0ms)
+Completed 200 OK in 144ms (Views: 127.0ms | ActiveRecord: 2.0ms)

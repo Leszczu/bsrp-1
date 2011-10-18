@@ -9,8 +9,8 @@
 %p.header Panel Gracza
 -if !current_player
   %ul
-    %li= link_to 'Zaloguj się', root_path
-    %li= link_to 'Stwórz postać', root_path
+    %li= link_to 'Zaloguj się', login_path
+    %li= link_to 'Stwórz postać', register_path
     %li= link_to 'Zagubione hasło', root_path
 -else
   %ul
