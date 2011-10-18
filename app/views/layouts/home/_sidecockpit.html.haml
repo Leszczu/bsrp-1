@@ -1,0 +1,31 @@
+%p.header Bayside Role Play - Kokpit
+%ul
+  %li= link_to 'Kokpit', root_path
+  %li= link_to 'Biografia', 'forum'
+  %li= link_to 'Zmiana ubrania', last_changes_path
+  %li= link_to 'Pojazdy', organizations_path
+  %li= link_to 'Znajdź gracza', admins_path
+  %li= link_to 'Profil', contact_path
+  %li= link_to 'Logi', last_changes_path
+  %li= link_to 'Gracze online', organizations_path
+  %li= link_to 'Zmiana avatara', admins_path
+  %li= link_to 'Galeria profilu', contact_path
+  %li= link_to 'Zmiana hasła', contact_path
+
+%p.header Menu
+-if !current_player
+  %ul
+    %li= link_to 'Wyjście z kokp', login_path
+    %li= link_to 'Stwórz postać', register_path
+    %li= link_to 'Zagubione hasło', root_path
+-else
+  %ul
+    %li= link_to 'Strona Główna', root_path
+    %li= link_to 'Zobacz swój profil', playershow_path(current_player)
+    %li= link_to 'Wyloguj się', logout_path
+%p.header Bądź na bieżąco!
+= link_to image_tag("icons/max_feed.png"), root_path
+= image_tag("icons/facebook.png")
+= link_to image_tag("icons/twitter.png"), 'http://twitter.com/BaysideMarina'
+= image_tag("icons/blip.png")
+

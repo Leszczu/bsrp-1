@@ -4,6 +4,10 @@ class PlayersController < ApplicationController
     @player = Player.new
   end
   
+  def playershow
+    @player = Player.find(params[:cached_slug])
+  end
+  
   def create
     @player = Player.new(params[:player])
     if @player.save
