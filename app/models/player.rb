@@ -9,13 +9,27 @@
   validates_presence_of :password, :on => :create
   validates_presence_of :name
   validates_uniqueness_of :name
-  validate :validate_new_password, :on => :update
+  validate :validate_old_password, :on => :update
+  validate :change_password, :on => :update
 
-  def validate_new_password
+  # validate :change_password, :on => :update
+
+
+  def validate_old_password
     if self.password.nil? || (!self.password_hash.nil? && get_password_hash(self.password) != self.password_hash)
       errors.add(:base, "Wprowazone hasło jest niepoprawne")
     end
   end
+  
+  def change_password
+    self.new_password = params[:new_password]
+    self.new_password_confirmation = params[:new_password_confirmation]
+      unless params[:new_password] or params[:new_password_confirmation]
+        errors.add(:base, "Brak informacji")
+      else
+        self.new_password = password
+      end
+    end
 
   def self.authenticate(name, password)
     player = find_by_name(name)
