@@ -1,4 +1,4 @@
-class PlayersController < ApplicationController
+﻿class PlayersController < ApplicationController
 
   def new
     @player = Player.new
@@ -14,6 +14,22 @@ class PlayersController < ApplicationController
       redirect_to root_url, :notice => "Signed up!"
     else
       render "new"
+    end
+  end
+  
+  def edit
+    @player = current_player
+  end
+  
+  def update
+  
+    @player = current_player
+      if @player.update_attributes(params[:player])
+        flash[:notice] = 'Zmiany zakończone powodzeniem.'
+        redirect_to change_password_path
+      else
+        flash[:error] = "Napotkano problem #{@player.errors.inspect}"
+        redirect_to change_password_path
     end
   end
 

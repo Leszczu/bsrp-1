@@ -7429,3 +7429,2275 @@ Rendered layouts/home/_header.html.haml (26.0ms)
 Rendered layouts/home/_side.html.haml (5.0ms)
 Rendered news/index.html.haml within layouts/application (106.0ms)
 Completed 200 OK in 145ms (Views: 129.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:48:38 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (282.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (316.0ms)
+Completed 200 OK in 412ms (Views: 338.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-18 18:48:44 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered sessions/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 50ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-18 18:48:45 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bTVUzguct9PlQybEFH8dOPCuL4tx6tywj38+Oks0ZTM=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 113ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:48:45 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (50.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (84.0ms)
+Completed 200 OK in 157ms (Views: 105.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-10-18 18:48:47 +0200
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/show.html.haml within layouts/application (89.0ms)
+Completed 200 OK in 130ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-18 18:48:49 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (61.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (86.0ms)
+Completed 200 OK in 103ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:48:51 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (51.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (27.0ms)
+Rendered news/index.html.haml within layouts/application (108.0ms)
+Completed 200 OK in 167ms (Views: 131.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:48:56 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (88.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (124.0ms)
+Completed 200 OK in 180ms (Views: 158.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-18 18:49:01 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (39.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 82ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:49:05 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (88.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (122.0ms)
+Completed 200 OK in 160ms (Views: 145.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-10-18 18:49:10 +0200
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/show.html.haml within layouts/application (88.0ms)
+Completed 200 OK in 132ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?page=2&_=1318956554532" for 127.0.0.1 at 2011-10-18 18:49:14 +0200
+  Processing by NewsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1318956554532"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (68.0ms)
+Rendered news/index.js.erb (75.0ms)
+Completed 200 OK in 129ms (Views: 113.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?_=1318956555851&page=1" for 127.0.0.1 at 2011-10-18 18:49:15 +0200
+  Processing by NewsController#index as JS
+  Parameters: {"_"=>"1318956555851", "page"=>"1"}
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (70.0ms)
+Rendered news/index.js.erb (76.0ms)
+Completed 200 OK in 173ms (Views: 126.0ms | ActiveRecord: 2.0ms)
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news" ORDER BY news.id DESC LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 6 AND "slugs".sluggable_type = 'News') ORDER BY id DESC
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "slugs" WHERE "slugs"."id" = 6
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 6 AND "slugs".sluggable_type = 'News') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "news" WHERE "news"."id" = 6
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:50:13 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (263.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (297.0ms)
+Completed 200 OK in 397ms (Views: 319.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/?page=2&_=1318956633324" for 127.0.0.1 at 2011-10-18 18:50:33 +0200
+  Processing by NewsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1318956633324"}
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (48.0ms)
+Rendered news/index.js.erb (54.0ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?_=1318956634421&page=1" for 127.0.0.1 at 2011-10-18 18:50:34 +0200
+  Processing by NewsController#index as JS
+  Parameters: {"_"=>"1318956634421", "page"=>"1"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (69.0ms)
+Rendered news/index.js.erb (75.0ms)
+Completed 200 OK in 129ms (Views: 113.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?_=1318956636028&page=2" for 127.0.0.1 at 2011-10-18 18:50:36 +0200
+  Processing by NewsController#index as JS
+  Parameters: {"_"=>"1318956636028", "page"=>"2"}
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (84.0ms)
+Rendered news/index.js.erb (90.0ms)
+Completed 200 OK in 166ms (Views: 131.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?_=1318956639199&page=1" for 127.0.0.1 at 2011-10-18 18:50:39 +0200
+  Processing by NewsController#index as JS
+  Parameters: {"_"=>"1318956639199", "page"=>"1"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (73.0ms)
+Rendered news/index.js.erb (82.0ms)
+Completed 200 OK in 188ms (Views: 165.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/wyloguj" for 127.0.0.1 at 2011-10-18 18:50:44 +0200
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:50:45 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (51.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (28.0ms)
+Rendered news/index.html.haml within layouts/application (107.0ms)
+Completed 200 OK in 165ms (Views: 129.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-18 18:50:46 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (34.0ms)
+Completed 200 OK in 69ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-18 18:50:47 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bTVUzguct9PlQybEFH8dOPCuL4tx6tywj38+Oks0ZTM=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 93ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:50:47 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (50.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (28.0ms)
+Rendered news/index.html.haml within layouts/application (154.0ms)
+Completed 200 OK in 212ms (Views: 177.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/wyloguj" for 127.0.0.1 at 2011-10-18 18:50:49 +0200
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:50:50 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (50.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (84.0ms)
+Completed 200 OK in 141ms (Views: 107.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-18 18:51:52 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (8.0ms)
+Rendered sessions/new.html.haml within layouts/application (41.0ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-10-18 18:51:54 +0200
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (33.0ms)
+Completed 200 OK in 73ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:51:55 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (71.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (103.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 18:51:58 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (105.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (138.0ms)
+Completed 200 OK in 177ms (Views: 160.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 19:27:04 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (70.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (103.0ms)
+Completed 200 OK in 148ms (Views: 126.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-18 19:27:06 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered sessions/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-18 19:27:07 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"txcG9VcZiTD8JOcaJ6THR9+yIO8iS/nUHT8/u0u61jo=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 107ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-18 19:27:07 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (72.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (106.0ms)
+Completed 200 OK in 145ms (Views: 127.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-10-18 19:27:08 +0200
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (91.0ms)
+Completed 200 OK in 133ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/samuel-diaz" for 127.0.0.1 at 2011-10-18 19:30:12 +0200
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"samuel-diaz"}
+Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed   in 24ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: ﻿%h2= @player.name
+  app/views/players/show.html.haml:1:in `_app_views_players_show_html_haml___1004083095_46616388_707682968'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/samuel-diaz" for 127.0.0.1 at 2011-10-18 19:32:15 +0200
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"samuel-diaz"}
+Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed   in 24ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: ﻿%h2= @player.name
+  app/views/players/show.html.haml:1:in `_app_views_players_show_html_haml___1004083095_46312104_707682968'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 16:15:56 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (215.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (281.0ms)
+Completed 200 OK in 360ms (Views: 303.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/samuel-diaz" for 127.0.0.1 at 2011-10-19 16:16:24 +0200
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"samuel-diaz"}
+Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed   in 23ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: ﻿%h2= @player.name
+  app/views/players/show.html.haml:1:in `_app_views_players_show_html_haml__153111815_33510816_404402940'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-19 16:16:27 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 52ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 16:16:28 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qgfgT3r6Iwxpxj/DbvHFyok9/EaRvmYBHoWSK2vUyvg=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 115ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 16:16:28 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (71.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (105.0ms)
+Completed 200 OK in 143ms (Views: 128.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 16:16:32 +0200
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (38.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 77ms (Views: 75.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:17:45 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (61.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/change_password.html.erb within layouts/cockpit (86.0ms)
+Completed 200 OK in 98ms (Views: 97.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:19:44 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered cockpit/change_password.html.haml within layouts/cockpit (0.0ms)
+Completed   in 13ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Zmiana has�a):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:19:47 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (60.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (85.0ms)
+Completed 200 OK in 97ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:27:55 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (39.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (63.0ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 16:27:56 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (71.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (105.0ms)
+Completed 200 OK in 156ms (Views: 134.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 16:27:57 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (39.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 78ms (Views: 75.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:28:00 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (39.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 76ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:28:32 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered layouts/home/_header.html.haml (14.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (26.0ms)
+Completed   in 38ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:28:37 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered layouts/home/_header.html.haml (15.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (26.0ms)
+Completed   in 38ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:28:47 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered layouts/home/_header.html.haml (15.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (31.0ms)
+Completed   in 50ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:28:48 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered layouts/home/_header.html.haml (35.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (48.0ms)
+Completed   in 60ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:28:56 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered layouts/home/_header.html.haml (14.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (27.0ms)
+Completed   in 39ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:28:56 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered layouts/home/_header.html.haml (14.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (26.0ms)
+Completed   in 42ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:29:01 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered layouts/home/_header.html.haml (37.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (49.0ms)
+Completed   in 61ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:29:28 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered layouts/home/_header.html.haml (15.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (27.0ms)
+Completed   in 41ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:29:28 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered layouts/home/_header.html.haml (15.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (26.0ms)
+Completed   in 38ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:29:38 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (39.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (101.0ms)
+Completed 200 OK in 114ms (Views: 111.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:29:59 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered cockpit/change_password.html.haml within layouts/cockpit (1.0ms)
+Completed   in 13ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+  app/views/cockpit/change_password.html.haml:9
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:30:33 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered cockpit/change_password.html.haml within layouts/cockpit (7.0ms)
+Completed   in 19ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x4e327a8>:0x4dce9f8>):
+0  app/views/cockpit/change_password.html.haml:5:in `_app_views_cockpit_change_password_html_haml__866170140_40790940_404402940'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:30:42 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered cockpit/change_password.html.haml within layouts/cockpit (6.0ms)
+Completed   in 19ms
+
+ActionView::Template::Error (undefined local variable or method `update_profile_path' for #<#<Class:0x4ebdf60>:0x4ebcc28>):
+    1: ﻿-title "Zmiana hasła"%h1 Zmiana hasła-form_for @player, :url => update_profile_path do |f|  Obecne hasło  %p    %br    = f.text_field :password    Aby zatwierdzić zmiany wpisz hasło  %p    %br    = f.text_field :email    Email  = f.submit "Gotowe"
+  app/views/cockpit/change_password.html.haml:3:in `_app_views_cockpit_change_password_html_haml__866170140_41278776_404402940'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:33:07 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered cockpit/change_password.html.haml within layouts/cockpit (2.0ms)
+Completed   in 15ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: ﻿-title "Zmiana hasła"%h1 Zmiana hasła-form_for @player, :url => update_profile_path do |f|  Obecne hasło  %p    %br    = f.text_field :password    Aby zatwierdzić zmiany wpisz hasło  %p    %br    = f.text_field :email    Email  = f.submit "Gotowe"
+  app/views/cockpit/change_password.html.haml:3:in `_app_views_cockpit_change_password_html_haml__866170140_39878184_404402940'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 16:33:07 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered cockpit/change_password.html.haml within layouts/cockpit (3.0ms)
+Completed   in 15ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: ﻿-title "Zmiana hasła"%h1 Zmiana hasła-form_for @player, :url => update_profile_path do |f|  Obecne hasło  %p    %br    = f.text_field :password    Aby zatwierdzić zmiany wpisz hasło  %p    %br    = f.text_field :email    Email  = f.submit "Gotowe"
+  app/views/cockpit/change_password.html.haml:3:in `_app_views_cockpit_change_password_html_haml__866170140_41292336_404402940'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:00:43 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (204.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (235.0ms)
+Completed 200 OK in 308ms (Views: 253.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-19 19:00:54 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (47.0ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:00:56 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X7L9fxtGL8++8F1SB3R1Yt07oOQEkz3vvFdh05OBLqg=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 101ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:00:56 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (103.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (132.0ms)
+Completed 200 OK in 166ms (Views: 151.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-10-19 19:00:57 +0200
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (66.0ms)
+Completed 200 OK in 133ms (Views: 94.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/samuel-diaz" for 127.0.0.1 at 2011-10-19 19:01:00 +0200
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"samuel-diaz"}
+Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed   in 21ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: ﻿%h2= @player.name
+  app/views/players/show.html.haml:1:in `_app_views_players_show_html_haml___790943336_38903460__405560733'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:01:03 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (39.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (61.0ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:01:06 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered cockpit/change_password.html.haml within layouts/cockpit (2.0ms)
+Completed   in 14ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: ﻿-title "Zmiana hasła"%h1 Zmiana hasła-form_for @player, :url => update_profile_path do |f|  Obecne hasło  %p    %br    = f.text_field :password    Aby zatwierdzić zmiany wpisz hasło  %p    %br    = f.text_field :email    Email  = f.submit "Gotowe"
+  app/views/cockpit/change_password.html.haml:3:in `_app_views_cockpit_change_password_html_haml___84054235_40659684__405560733'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:01:55 +0200
+  Processing by CockpitController#change_password as HTML
+Rendered cockpit/change_password.html.haml within layouts/cockpit (2.0ms)
+Completed   in 14ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: ﻿-title "Zmiana hasła"%h1 Zmiana hasła-form_for @player, :url => update_profile_path do |f|  Obecne hasło  %p    %br    = f.text_field :password    Aby zatwierdzić zmiany wpisz hasło  %p    %br    = f.text_field :email    Email  = f.submit "Gotowe"
+  app/views/cockpit/change_password.html.haml:3:in `_app_views_cockpit_change_password_html_haml___84054235_40710456__405560733'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:04:18 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered cockpit/change_password.html.haml within layouts/cockpit (8.0ms)
+Completed   in 38ms
+
+ActionView::Template::Error (undefined method `email' for #<Player:0x3e83800>):
+  app/views/cockpit/change_password.html.haml:11:in `block in _app_views_cockpit_change_password_html_haml___84054235_32769564__405560733'
+  app/views/cockpit/change_password.html.haml:3:in `_app_views_cockpit_change_password_html_haml___84054235_32769564__405560733'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:04:49 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml___84054235_32595216__405560733 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 73ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:04:50 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X7L9fxtGL8++8F1SB3R1Yt07oOQEkz3vvFdh05OBLqg=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaz"}, "commit"=>"Gotowe"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaz') AND ("players".id <> 1) LIMIT 1
+Completed   in 157ms
+
+NoMethodError (undefined method `get_password_hash' for #<Player:0x36dce60>):
+  app/models/player.rb:14:in `validate_new_password'
+  app/controllers/players_controller.rb:27:in `update'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:36:19 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (253.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (286.0ms)
+Completed 200 OK in 382ms (Views: 306.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-19 19:37:45 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:37:46 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 93ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:37:47 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (90.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (123.0ms)
+Completed 200 OK in 161ms (Views: 144.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:37:48 +0200
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (60.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (86.0ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:44:16 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (78.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (115.0ms)
+Completed 200 OK in 154ms (Views: 136.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:44:33 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_43180716_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 74ms (Views: 54.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:44:44 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_42950724_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (66.0ms)
+Completed 200 OK in 97ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:44:53 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_45296832_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 105ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:44:53 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaz"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaz') AND ("players".id <> 1) LIMIT 1[0m
+Completed   in 54ms
+
+NoMethodError (undefined method `get_password_hash' for #<Player:0x5434e00>):
+  app/models/player.rb:14:in `validate_new_password'
+  app/controllers/players_controller.rb:27:in `update'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:46:13 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaz"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaz') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 125ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:46:13 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (63.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (88.0ms)
+Completed 200 OK in 100ms (Views: 99.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:46:23 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_44728044_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 95ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:46:24 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaz"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaz') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 110ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:46:24 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (96.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (121.0ms)
+Completed 200 OK in 134ms (Views: 132.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:46:32 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaz"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaz') AND ("players".id <> 1) LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "players" SET "password_salt" = '$2a$10$qmxfC3nC6VEfC2HSO45tre', "password_hash" = '$2a$10$qmxfC3nC6VEfC2HSO45treuC.dmVe/ps0MUG/E2JYLzhLtHFTKUhe', "updated_at" = '2011-10-19 17:46:32.957571' WHERE "players"."id" = 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 365ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:46:33 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (40.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 77ms (Views: 75.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kontakt" for 127.0.0.1 at 2011-10-19 19:46:36 +0200
+  Processing by HomeController#contact as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (41.0ms)
+Rendered layouts/home/_side.html.haml (7.0ms)
+Rendered home/contact.html.haml within layouts/application (66.0ms)
+Completed 200 OK in 90ms (Views: 88.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:46:40 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46143300_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 75ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:47:12 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaz"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaz') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 92ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:47:12 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (41.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 77ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:47:17 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diazz"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diazz') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 87ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:47:17 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (40.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 77ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:47:22 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diazz"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diazz') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 87ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:47:22 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (41.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:47:30 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46161528_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 75ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:47:35 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaza"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 86ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:47:35 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (40.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:47:39 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaza"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mAREL (1.0ms)[0m  [1mUPDATE "players" SET "name" = 'Samuel Diaza', "password_salt" = '$2a$10$gWkvkQ3gnOnd.c0SvWI3ee', "password_hash" = '$2a$10$gWkvkQ3gnOnd.c0SvWI3eeaHJDO65DPn3P6YHEjtZyKTaJ8L3Nf32', "updated_at" = '2011-10-19 17:47:39.362369' WHERE "players"."id" = 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE "slugs"."name" = 'samuel-diaza' AND "slugs"."scope" IS NULL AND ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "slugs" WHERE "slugs"."name" = 'samuel-diaza' AND "slugs"."scope" IS NULL AND "slugs"."sluggable_type" = 'Player'[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "slugs" ("name", "sluggable_id", "sequence", "sluggable_type", "scope", "created_at") VALUES ('samuel-diaza', 1, 1, 'Player', NULL, '2011-10-19 17:47:39.368370')
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 267ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:47:39 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (40.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (32.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (90.0ms)
+Completed 200 OK in 102ms (Views: 102.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/konto/samuel-diaza" for 127.0.0.1 at 2011-10-19 19:47:40 +0200
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"samuel-diaza"}
+Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed   in 24ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: ﻿%h2= @player.name
+  app/views/players/show.html.haml:1:in `_app_views_players_show_html_haml___380378512_46251252_918173299'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/kontakt" for 127.0.0.1 at 2011-10-19 19:47:43 +0200
+  Processing by HomeController#contact as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (40.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered home/contact.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:47:45 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46207944_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 75ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:47:52 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46195596_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 76ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:48:17 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered cockpit/change_password.html.haml within layouts/cockpit (9.0ms)
+Completed   in 62ms
+
+ActionView::Template::Error (undefined method `new_password' for #<Player:0x5834478>):
+  app/views/cockpit/change_password.html.haml:11:in `block in _app_views_cockpit_change_password_html_haml__35252506_47476260_918173299'
+  app/views/cockpit/change_password.html.haml:3:in `_app_views_cockpit_change_password_html_haml__35252506_47476260_918173299'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:48:39 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46307868_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 99ms (Views: 55.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:48:46 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed   in 18ms
+
+NameError (undefined local variable or method `on' for #<Class:0x5851770>):
+  app/models/player.rb:5:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:9:in `current_player'
+  app/controllers/cockpit_controller.rb:18:in `change_password'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:48:50 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46206804_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (46.0ms)
+Completed 200 OK in 79ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:48:58 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_45570756_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (31.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (88.0ms)
+Completed 200 OK in 120ms (Views: 100.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:49:01 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_45268752_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 98ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:49:34 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46204848_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 76ms (Views: 55.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:49:41 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_45302088_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (106.0ms)
+Completed 200 OK in 137ms (Views: 117.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:49:46 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_47484024_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 158ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:49:59 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46241412_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 76ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:50:03 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46179012_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (46.0ms)
+Completed 200 OK in 77ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:50:08 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_45458592_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 100ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:50:10 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+WARNING: Can't mass-assign protected attributes: new_password, new_password_confirmation
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 111ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:50:10 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (65.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (91.0ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:50:42 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_45263316_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (96.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (131.0ms)
+Completed 200 OK in 163ms (Views: 142.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:50:43 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+WARNING: Can't mass-assign protected attributes: new_password, new_password_confirmation
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 114ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:50:43 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (65.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (90.0ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:50:50 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_27891024_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 100ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:50:51 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+WARNING: Can't mass-assign protected attributes: new_password, new_password_confirmation
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit/haslo
+Completed 302 Found in 114ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:50:51 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_47476548_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 100ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kontakt" for 127.0.0.1 at 2011-10-19 19:51:08 +0200
+  Processing by HomeController#contact as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (40.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered home/contact.html.haml within layouts/application (65.0ms)
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:51:38 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+WARNING: Can't mass-assign protected attributes: new_password, new_password_confirmation
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit/haslo
+Completed 302 Found in 87ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:51:38 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46251816_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 77ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:52:24 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46207860_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 77ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:52:29 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_45515940_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (68.0ms)
+Completed 200 OK in 100ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/hasloa/aktualizuj" for 127.0.0.1 at 2011-10-19 19:52:48 +0200
+
+ActionController::RoutingError (No route matches "/kokpit/hasloa/aktualizuj"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/kokpit/haslo/edytuj" for 127.0.0.1 at 2011-10-19 19:52:55 +0200
+  Processing by PlayersController#edit as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Completed   in 37ms
+
+ActionView::MissingTemplate (Missing template players/edit with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml, :haml], :formats=>[:html], :locale=>[:pl, :pl]} in view paths "c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:53:05 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46202940_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 75ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:53:10 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_47484144_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 159ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:53:25 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered cockpit/change_password.html.haml within layouts/cockpit (2.0ms)
+Completed   in 34ms
+
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"players"}):
+    1: ﻿-title "Zmiana hasła"%h1 Zmiana hasła-form_for @player, :url => update_profile_path do |f|  Obecne hasło  %p    = f.text_field :password  %p    Wpisz nowe hasło    %br    = f.text_field :new_password    %br    Wpisz ponownie nowe hasło    %br    = f.text_field :new_password_confirmation  = f.submit "Gotowe"
+  app/views/cockpit/change_password.html.haml:3:in `_app_views_cockpit_change_password_html_haml__35252506_46332828_918173299'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:53:56 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered cockpit/change_password.html.haml within layouts/cockpit (3.0ms)
+Completed   in 60ms
+
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"players"}):
+    1: ﻿-title "Zmiana hasła"%h1 Zmiana hasła-form_for @player, :url => update_profile_path do |f|  Obecne hasło  %p    = f.text_field :password  %p    Wpisz nowe hasło    %br    = f.text_field :new_password    %br    Wpisz ponownie nowe hasło    %br    = f.text_field :new_password_confirmation  = f.submit "Gotowe"
+  app/views/cockpit/change_password.html.haml:3:in `_app_views_cockpit_change_password_html_haml__35252506_47475972_918173299'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:54:06 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46920360_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 99ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:54:07 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]"}, "commit"=>"Gotowe"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: new_password, new_password_confirmation
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1
+Redirected to http://localhost:3000/kokpit/haslo
+Completed 302 Found in 87ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:54:07 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46806912_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 100ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:54:10 +0200
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (68.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (95.0ms)
+Completed 200 OK in 107ms (Views: 105.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/organizacje" for 127.0.0.1 at 2011-10-19 19:54:13 +0200
+  Processing by HomeController#organizations as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (40.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered home/organizations.html.haml within layouts/application (89.0ms)
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:54:15 +0200
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (41.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (66.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:54:16 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46462200_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 77ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/samuel-diaza" for 127.0.0.1 at 2011-10-19 19:54:19 +0200
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"samuel-diaza"}
+Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed   in 23ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: ﻿%h2= @player.name
+  app/views/players/show.html.haml:1:in `_app_views_players_show_html_haml___380378512_46925568_918173299'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:54:21 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_47483136_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 178ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:54:32 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]"}, "commit"=>"Gotowe"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: new_password, new_password_confirmation
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1
+Redirected to http://localhost:3000/kokpit/haslo
+Completed 302 Found in 116ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:54:32 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_45510516_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (89.0ms)
+Completed 200 OK in 120ms (Views: 100.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:54:36 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]"}, "commit"=>"Gotowe"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: new_password, new_password_confirmation
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  UPDATE "players" SET "password_salt" = '$2a$10$EyAvQxafcBc4QnmG/OXB0.', "password_hash" = '$2a$10$EyAvQxafcBc4QnmG/OXB0.EVqe8uCu93Cb7.BW6mr4liBg8D/sw8e', "updated_at" = '2011-10-19 17:54:37.143265' WHERE "players"."id" = 1
+Redirected to http://localhost:3000/kokpit/haslo
+Completed 302 Found in 230ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:54:37 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46215468_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (33.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (69.0ms)
+Completed 200 OK in 101ms (Views: 80.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/wyloguj" for 127.0.0.1 at 2011-10-19 19:54:39 +0200
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:54:39 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (52.0ms)
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (87.0ms)
+Completed 200 OK in 149ms (Views: 110.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-19 19:54:40 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered sessions/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 52ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:54:41 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered sessions/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 97ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:54:43 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered sessions/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 97ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:54:47 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (33.0ms)
+Completed 200 OK in 216ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:54:53 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaza", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaza' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 85ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:54:53 +0200
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered news/_news.html.haml (76.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (110.0ms)
+Completed 200 OK in 148ms (Views: 131.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:54:55 +0200
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (67.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (93.0ms)
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kontakt" for 127.0.0.1 at 2011-10-19 19:54:56 +0200
+  Processing by HomeController#contact as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (67.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered home/contact.html.haml within layouts/application (91.0ms)
+Completed 200 OK in 114ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:54:57 +0200
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (42.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (93.0ms)
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:54:58 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46567920_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 76ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:55:02 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "new_password_confirmation"=>"[FILTERED]"}, "commit"=>"Gotowe"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: new_password, new_password_confirmation
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaza') AND ("players".id <> 1) LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "players" SET "password_salt" = '$2a$10$8RobesP1Q0WG6QEpeQOsN.', "password_hash" = '$2a$10$8RobesP1Q0WG6QEpeQOsN.Ecs6tBo33Iis4BW0gFb8wwtzSKrq9PC', "updated_at" = '2011-10-19 17:55:03.147752' WHERE "players"."id" = 1
+Redirected to http://localhost:3000/kokpit/haslo
+Completed 302 Found in 205ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:55:03 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_47105628_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 100ms (Views: 56.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/konto/wyloguj" for 127.0.0.1 at 2011-10-19 19:55:05 +0200
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:55:05 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (100.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (132.0ms)
+Completed 200 OK in 171ms (Views: 155.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-10-19 19:55:06 +0200
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered sessions/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 53ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:55:08 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaz' LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered sessions/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 71ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:55:11 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaza", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaza' LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered sessions/new.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 136ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:55:15 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaza", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaza' LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered sessions/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 135ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:55:17 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaza", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaza' LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 135ms (Views: 51.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-10-19 19:55:19 +0200
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "name"=>"Samuel Diaza", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Samuel Diaza' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 132ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:55:19 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (76.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (111.0ms)
+Completed 200 OK in 149ms (Views: 131.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-10-19 19:55:21 +0200
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (42.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:55:23 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46292400_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 76ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:55:39 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46279116_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 76ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:55:43 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaz"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaz') AND ("players".id <> 1) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit/haslo
+Completed 302 Found in 87ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:55:43 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46282632_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 76ms (Views: 56.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/kokpit/haslo/aktualizuj" for 127.0.0.1 at 2011-10-19 19:55:45 +0200
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xW4BsUdSQT/kR9PoAuZEwB66IjiiaHVwn62zb90Oe38=", "player"=>{"password"=>"[FILTERED]", "name"=>"Samuel Diaz"}, "commit"=>"Gotowe"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Samuel Diaz') AND ("players".id <> 1) LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mAREL (1.0ms)[0m  [1mUPDATE "players" SET "name" = 'Samuel Diaz', "password_salt" = '$2a$10$uUGxWRedUMH3y.zSFLGKn.', "password_hash" = '$2a$10$uUGxWRedUMH3y.zSFLGKn.KDBm8PaB1HXtX2fwzk4ErUJHUx8Er76', "updated_at" = '2011-10-19 17:55:46.201215' WHERE "players"."id" = 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE "slugs"."name" = 'samuel-diaz' AND "slugs"."scope" IS NULL AND ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "slugs" WHERE "slugs"."id" = 7[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "slugs" WHERE "slugs"."name" = 'samuel-diaz' AND "slugs"."scope" IS NULL AND "slugs"."sluggable_type" = 'Player'
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "slugs" ("name", "sluggable_id", "sequence", "sluggable_type", "scope", "created_at") VALUES ('samuel-diaz', 1, 1, 'Player', NULL, '2011-10-19 17:55:46.205215')[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Redirected to http://localhost:3000/kokpit/haslo
+Completed 302 Found in 219ms
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:55:46 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46344960_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 76ms (Views: 56.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:55:56 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46309056_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 75ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:56:03 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46209684_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 76ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:56:07 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46080408_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (68.0ms)
+Completed 200 OK in 99ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:56:10 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_47478024_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 101ms (Views: 55.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:56:15 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46442628_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 75ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:56:21 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46298304_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 77ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/haslo" for 127.0.0.1 at 2011-10-19 19:56:26 +0200
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_cockpit_change_password_html_haml__35252506_46220100_918173299 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/change_password.html.haml:3)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 77ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/samuel-diaz" for 127.0.0.1 at 2011-10-19 19:56:29 +0200
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"samuel-diaz"}
+Rendered players/show.html.haml within layouts/application (2.0ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: ﻿%h2= @player.name
+  app/views/players/show.html.haml:1:in `_app_views_players_show_html_haml___380378512_46271568_918173299'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/konto/wyloguj" for 127.0.0.1 at 2011-10-19 19:56:32 +0200
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-19 19:56:32 +0200
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered news/_news.html.haml (142.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (175.0ms)
+Completed 200 OK in 212ms (Views: 196.0ms | ActiveRecord: 2.0ms)

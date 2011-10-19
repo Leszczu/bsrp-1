@@ -25,7 +25,15 @@ Bsrp::Application.routes.draw do
   
   # Kokpit
   match 'kokpit' => 'cockpit#index', :as => :cockpit
-
+  match 'kokpit/haslo' => 'cockpit#change_password', :as => :change_password
+  put 'kokpit/haslo/aktualizuj' => "players#update", :as => :update_password
+  
+  # scope "/kokpit/haslo" do
+  #     put   "aktualizuj" => "players#update", :as => :update_profile
+  #     match "edytuj" => "players#edit", :as => :edit_profile
+  #     match "/" => "players#index", :as => :account
+  # end
+  
   # Podstrony
   match 'administracja' => 'home#admins', :as => :admins
   match 'organizacje' => 'home#organizations', :as => :organizations

@@ -15,6 +15,7 @@ class CockpitController < ApplicationController
   end
 
   def change_password
+    @player = current_player
   end
 
   def avatar
