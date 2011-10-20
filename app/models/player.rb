@@ -1,5 +1,6 @@
 ﻿class Player < ActiveRecord::Base
   attr_accessible :name, :password, :password_confirmation
+  attr_accessible :new_password, :new_password_confirmation
   has_friendly_id :name, :use_slug => true
   attr_accessor :password
   attr_accessor :new_password, :new_password_confirmation
@@ -7,12 +8,11 @@
 
   validates_confirmation_of :password
   validates_presence_of :password, :on => :create
+  validates_presence_of :new_password, :new_password_confirmation, :on => :update
   validates_presence_of :name
   validates_uniqueness_of :name
   validate :validate_old_password, :on => :update
-  validate :change_password, :on => :update
-
-  # validate :change_password, :on => :update
+  validate :validate_new_password, :on => :update
 
 
   def validate_old_password
@@ -21,15 +21,12 @@
     end
   end
   
-  def change_password
-    self.new_password = params[:new_password]
-    self.new_password_confirmation = params[:new_password_confirmation]
-      unless params[:new_password] or params[:new_password_confirmation]
-        errors.add(:base, "Brak informacji")
-      else
-        self.new_password = password
-      end
+
+  def validate_new_password
+    if self.new_password != self.new_password_confirmation
+      errors.add(:base, "Podane hasła nie są takie same")
     end
+  end
 
   def self.authenticate(name, password)
     player = find_by_name(name)

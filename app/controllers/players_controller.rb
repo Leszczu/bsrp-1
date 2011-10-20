@@ -11,8 +11,9 @@
   def create
     @player = Player.new(params[:player])
     if @player.save
-      redirect_to root_url, :notice => "Signed up!"
+      redirect_to root_url, :notice => "Konto utworzone!"
     else
+      flash[:error] = 'Wystąpił jakiś błąd, sprawdź i spróbuj ponownie'
       render "new"
     end
   end
