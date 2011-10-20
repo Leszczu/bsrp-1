@@ -21,12 +21,11 @@
     end
   end
   
-
   def validate_new_password
     if self.new_password != self.new_password_confirmation
       errors.add(:base, "Podane hasła nie są takie same")
     else
-      # Jak zrobić, żeby hasło zmieinało się na nowe?
+      self.password = new_password
     end
   end
 

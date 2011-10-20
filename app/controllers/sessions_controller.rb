@@ -8,7 +8,7 @@
       session[:player_id] = player.id
       redirect_to root_url#, :notice => "Zalogowany!"
     else
-      flash[:notice] = "Zła nazwa postaci, bądź hasło."
+      flash[:error] = "Zła nazwa postaci, bądź hasło"
       render "new"
     end
   end
