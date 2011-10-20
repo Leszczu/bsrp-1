@@ -25,8 +25,20 @@ Bsrp::Application.routes.draw do
   
   # Kokpit
   match 'kokpit' => 'cockpit#index', :as => :cockpit
-  match 'kokpit/haslo' => 'cockpit#change_password', :as => :change_password
-  put 'kokpit/haslo/aktualizuj' => "players#update", :as => :update_password
+  match 'kokpit/biografia' => 'cockpit#biography', :as => :biography
+  match 'kokpit/ubranie' => 'cockpit#skins', :as => :skins
+  match 'kokpit/pojazdy' => 'cockpit#vehicles', :as => :vehicles
+  match 'kokpit/szukaj/gracz' => 'cockpit#find_player', :as => :player_find
+  match 'kokpit/edycja/profil' => 'cockpit#profile', :as => :profile
+  match 'kokpit/logi' => 'cockpit#logs', :as => :logs
+  match 'kokpit/gracze/online' => 'cockpit#online', :as => :online
+  match 'kokpit/edycja/avatar' => 'cockpit#avatar', :as => :avatar
+  match 'kokpit/galeria' => 'cockpit#gallery', :as => :gallery
+  
+  
+  # Kokpit > Has³o
+  match 'kokpit/edycja/haslo' => 'cockpit#change_password', :as => :change_password
+  put 'kokpit/edycja/haslo/aktualizuj' => "players#update", :as => :update_password
   
   # scope "/kokpit/haslo" do
   #     put   "aktualizuj" => "players#update", :as => :update_profile
