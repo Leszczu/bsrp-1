@@ -11,7 +11,7 @@
   %p.breadcrumb
     =link_to 'Przeczytaj całość', show_path(news.cached_slug)
     |
-    =link_to "Przeczytaj komentarze", show_path(news.cached_slug)+'#comments'
+    =link_to "Przeczytaj komentarze (#{news.comments.size})", show_path(news.cached_slug)+'#comments'
   %br
   =#(#{news.comment.size})
 %div.left= paginate @news
