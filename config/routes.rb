@@ -1,5 +1,7 @@
 Bsrp::Application.routes.draw do
 
+  get "comments/_comment"
+
   # Resources
   resources :players
   resources :sessions
