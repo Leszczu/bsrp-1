@@ -6,6 +6,6 @@ one:
   password_salt: MyString
 
 two:
-  name: MyString
+  name: MyString2
   password_hash: MyString
   password_salt: MyString

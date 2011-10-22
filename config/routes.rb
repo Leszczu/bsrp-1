@@ -3,6 +3,7 @@ Bsrp::Application.routes.draw do
   # Resources
   resources :players
   resources :sessions
+  resources :comments
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -35,10 +36,12 @@ Bsrp::Application.routes.draw do
   match 'kokpit/edycja/avatar' => 'cockpit#avatar', :as => :avatar
   match 'kokpit/galeria' => 'cockpit#gallery', :as => :gallery
   
-  
   # Kokpit > Has³o
   match 'kokpit/edycja/haslo' => 'cockpit#change_password', :as => :change_password
   put 'kokpit/edycja/haslo/aktualizuj' => "players#update", :as => :update_password
+  
+  # Komentarze
+  # resources :news, :has_many => :comments
   
   # scope "/kokpit/haslo" do
   #     put   "aktualizuj" => "players#update", :as => :update_profile

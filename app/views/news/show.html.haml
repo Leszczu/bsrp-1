@@ -13,6 +13,22 @@
   =link_to 'Powrót do poprzeniej strony', 'javascript:history.back(-1)'
   |
   =link_to 'Drukuj', 'javascript:window.print();'
+%h2 Komentarze
+-@news.comments.each do |c|
+  .comment
+    #comments
+      %p.dateandoptions
+        Dodano
+        =distance_of_time_in_words(c.created_at, Time.now)
+        temu.
+      %p
+        =image_tag 'icons/default_avatar.png'
+        %br=link_to c.player.name, playershow_path(c.player)
+      %br
+      %p=c.body
+
+=render :partial => @comment
+=#render :partial => @comments
 /%h2 Komentarze
 =# render :partial => @news.comment, :locals => { :list => true }
 /#comments

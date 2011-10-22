@@ -1,19 +1,16 @@
 ﻿class Player < ActiveRecord::Base
-  attr_accessible :name, :password, :password_confirmation
-  attr_accessible :new_password, :new_password_confirmation
+  attr_accessible :name, :password, :password_confirmation, :on => :create
+  attr_accessible :new_password, :new_password_confirmation, :on => :update
   has_friendly_id :name, :use_slug => true
-  attr_accessor :password
-  attr_accessor :new_password, :new_password_confirmation
+  attr_accessor :password, :new_password, :new_password_confirmation
   before_save :encrypt_password
-
+  
   validates_confirmation_of :password
-  validates_presence_of :password, :on => :create
   validates_presence_of :new_password, :new_password_confirmation, :on => :update
-  validates_presence_of :name
+  validates_presence_of :name, :password, :on => :create
   validates_uniqueness_of :name
   validate :validate_old_password, :on => :update
   validate :validate_new_password, :on => :update
-
 
   def validate_old_password
     if self.password.nil? || (!self.password_hash.nil? && get_password_hash(self.password) != self.password_hash)

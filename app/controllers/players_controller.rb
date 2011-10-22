@@ -7,6 +7,10 @@
   def playershow
     @player = Player.find(params[:cached_slug])
   end
+    
+  def show
+    @player = Player.find(params[:cached_slug])
+  end
   
   def create
     @player = Player.new(params[:player])
