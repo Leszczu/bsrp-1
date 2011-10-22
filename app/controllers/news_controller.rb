@@ -5,7 +5,9 @@ class NewsController < ApplicationController
 
   def show
     @news = News.find(params[:cached_slug])
-    @comment = Comment.new(:news_id => @news.id, :player_id => current_player.id)
+    if current_player
+      @comment = Comment.new(:news_id => @news.id, :player_id => current_player.id)
+    end
   end
 
 

@@ -9,4 +9,13 @@ class ApplicationController < ActionController::Base
     @current_player ||= Player.find(session[:player_id]) if session[:player_id]
   end
   
+  def log_in
+    if !current_player
+      redirect_to root_path
+      false
+    else
+      true
+    end
+  end
+  
 end

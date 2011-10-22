@@ -1,5 +1,7 @@
 class CockpitController < ApplicationController
-  
+
+  before_filter :log_in
+
   layout 'cockpit'
 
   def index

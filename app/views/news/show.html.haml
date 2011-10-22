@@ -13,38 +13,7 @@
   =link_to 'Powrót do poprzeniej strony', 'javascript:history.back(-1)'
   |
   =link_to 'Drukuj', 'javascript:window.print();'
+
 %h2 Komentarze
--@news.comments.each do |c|
-  .comment
-    #comments
-      %p.dateandoptions
-        Dodano
-        =distance_of_time_in_words(c.created_at, Time.now)
-        temu.
-      %p
-        =image_tag 'icons/default_avatar.png'
-        %br
-        %b=link_to c.player.name, playershow_path(c.player)
-      %br
-      %p=c.body
-.form
-  -form_for @comment do |f|
-    =f.hidden_field :news_id
-    =f.hidden_field :player_id
-    =f.text_area :body, :cols => 120, :rows => 8
-    %br
-    =f.submit "Dodaj komentarz"
 
-
-=#render :partial => @comments
-/%h2 Komentarze
-=# render :partial => @news.comment, :locals => { :list => true }
-/#comments
-/#notice
-/  .form
-/    -form_for @comment, :remote => true do |f|
-/      =f.hidden_field :news_id
-/      =f.text_area :body, :cols => 72, :rows => 8
-/      %br
-/      =f.submit "Dodaj komentarz"
-
+=render :partial => 'comments/comment'
