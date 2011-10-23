@@ -22,6 +22,11 @@
     end
   end
   
+  def change_password
+    password, password_confirmation = params[:player][:password], params[:player][:password_confirmation]
+    current_player.change_password(password, password_confirmation)
+  end
+  
   def edit
     @player = current_player
   end
