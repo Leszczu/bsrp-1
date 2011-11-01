@@ -37911,3 +37911,2226 @@ Rendered layouts/home/_header.html.haml (3.0ms)
 Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
 Rendered cockpit/avatar.html.haml within layouts/cockpit (50.0ms)
 Completed 200 OK in 88ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:47:18 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (289.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (323.0ms)
+Completed 200 OK in 424ms (Views: 342.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-11-01 17:47:30 +0100
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:47:30 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (105.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (138.0ms)
+Completed 200 OK in 202ms (Views: 160.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-11-01 17:47:31 +0100
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/new.html.haml within layouts/application (36.0ms)
+Completed 200 OK in 100ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:47:32 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (122.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (155.0ms)
+Completed 200 OK in 217ms (Views: 174.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-01 17:47:34 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered comments/_comment.html.haml (53.0ms)
+Rendered news/show.html.haml within layouts/application (131.0ms)
+Completed   in 208ms
+
+ActionView::Template::Error (undefined method `avatar' for "#<Player:0x4699368>":Player):
+    6:       =distance_of_time_in_words(c.created_at, Time.now)
+    7:       temu.
+    8:     %p
+    9:       = image_tag c.player.avatar.url(:small)
+    10:       %br
+    11:       %b=link_to c.player.name, playershow_path(c.player)
+    12:     %br
+  app/views/comments/_comment.html.haml:9:in `block in _app_views_comments__comment_html_haml__433280009_45706572__348839572'
+  app/views/comments/_comment.html.haml:1:in `_app_views_comments__comment_html_haml__433280009_45706572__348839572'
+  app/views/news/show.html.haml:19:in `_app_views_news_show_html_haml__896500931_37925316_271545636'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:48:15 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+Rendered news/_news.html.haml (64.0ms)
+Rendered news/index.html.haml within layouts/application (71.0ms)
+Completed   in 111ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x572b1e8>):
+    2:   %h1= news.title
+    3:   %p<>
+    4:     Dodał
+    5:     =link_to news.player.name, playershow_path(news.player)
+    6:     |
+    7:     Dodane
+    8:     =time_ago_in_words(news.created_at)
+  app/models/player.rb:15:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/views/news/_news.html.haml:5:in `block in _app_views_news__news_html_haml___974004374_36076200_311589836'
+  app/views/news/_news.html.haml:1:in `each'
+  app/views/news/_news.html.haml:1:in `_app_views_news__news_html_haml___974004374_36076200_311589836'
+  app/views/news/index.html.haml:3:in `_app_views_news_index_html_haml___783108058_36615456_271545636'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:48:20 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+Rendered news/_news.html.haml (38.0ms)
+Rendered news/index.html.haml within layouts/application (45.0ms)
+Completed   in 84ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x3f1b990>):
+    2:   %h1= news.title
+    3:   %p<>
+    4:     Dodał
+    5:     =link_to news.player.name, playershow_path(news.player)
+    6:     |
+    7:     Dodane
+    8:     =time_ago_in_words(news.created_at)
+  app/models/player.rb:15:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/views/news/_news.html.haml:5:in `block in _app_views_news__news_html_haml___974004374_37818648_311589836'
+  app/views/news/_news.html.haml:1:in `each'
+  app/views/news/_news.html.haml:1:in `_app_views_news__news_html_haml___974004374_37818648_311589836'
+  app/views/news/index.html.haml:3:in `_app_views_news_index_html_haml___783108058_37909104_271545636'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (105.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:48:27 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+Rendered news/_news.html.haml (58.0ms)
+Rendered news/index.html.haml within layouts/application (65.0ms)
+Completed   in 105ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x5057868>):
+    2:   %h1= news.title
+    3:   %p<>
+    4:     Dodał
+    5:     =link_to news.player.name, playershow_path(news.player)
+    6:     |
+    7:     Dodane
+    8:     =time_ago_in_words(news.created_at)
+  app/models/player.rb:15:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/views/news/_news.html.haml:5:in `block in _app_views_news__news_html_haml___974004374_33382404_311589836'
+  app/views/news/_news.html.haml:1:in `each'
+  app/views/news/_news.html.haml:1:in `_app_views_news__news_html_haml___974004374_33382404_311589836'
+  app/views/news/index.html.haml:3:in `_app_views_news_index_html_haml___783108058_34803648_271545636'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:49:08 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (256.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (289.0ms)
+Completed 200 OK in 396ms (Views: 310.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-01 17:49:15 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered comments/_comment.html.haml (45.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/show.html.haml within layouts/application (198.0ms)
+Completed 200 OK in 252ms (Views: 217.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:49:18 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (126.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (31.0ms)
+Rendered news/index.html.haml within layouts/application (224.0ms)
+Completed 200 OK in 278ms (Views: 251.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:50:09 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (109.0ms)
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (142.0ms)
+Completed 200 OK in 242ms (Views: 223.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-11-01 17:50:10 +0100
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (31.0ms)
+Rendered sessions/new.html.haml within layouts/application (54.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-11-01 17:50:10 +0100
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (8.0ms)
+Rendered sessions/new.html.haml within layouts/application (42.0ms)
+Completed 200 OK in 77ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-11-01 17:50:11 +0100
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "name"=>"Bangeusz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Bangeusz' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 93ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:50:11 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)
+Rendered news/_news.html.haml (109.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (143.0ms)
+Completed 200 OK in 183ms (Views: 163.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:50:12 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (33.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (71.0ms)
+Completed 200 OK in 106ms (Views: 83.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:50:14 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_35332752__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (41.0ms)
+Completed   in 78ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x43a8db8>:0x4366350>):
+    1: -title "Zmiana avatara"
+    2: = form_for :player, @player, :url => cockpit_path, :html => { :multipart => true } do |form|
+    3:   = f.file_field :avatar
+    4:   %br
+    5:   = f.submit
+  app/views/cockpit/avatar.html.haml:3:in `block in _app_views_cockpit_avatar_html_haml__1004234460_35332752__363860293'
+  app/views/cockpit/avatar.html.haml:2:in `_app_views_cockpit_avatar_html_haml__1004234460_35332752__363860293'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:50:23 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_40191444__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (49.0ms)
+Completed 200 OK in 85ms (Views: 61.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit" for 127.0.0.1 at 2011-11-01 17:50:27 +0100
+  Processing by CockpitController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x4fc3e60 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-gqwx0g>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (65.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (91.0ms)
+Completed 200 OK in 127ms (Views: 103.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:50:29 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (192.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (227.0ms)
+Completed 200 OK in 267ms (Views: 246.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-01 17:50:30 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mPlayer Load (28.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__445191782_32598312_76898826 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (76.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (126.0ms)
+Completed 200 OK in 266ms (Views: 118.0ms | ActiveRecord: 32.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2011-11-01 17:50:32 +0100
+  Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "comment"=>{"news_id"=>"1", "player_id"=>"4", "body"=>"hehe"}, "commit"=>"Dodaj komentarz"}
+  [1m[35mAREL (1.0ms)[0m  INSERT INTO "comments" ("news_id", "player_id", "body", "created_at", "updated_at") VALUES (1, 4, 'hehe', '2011-11-01 16:50:32.467176', '2011-11-01 16:50:32.467176')
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/news/zmiany-zmiany-zmiany#comments
+Completed 302 Found in 190ms
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-01 17:50:32 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__445191782_41869728_76898826 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (31.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/show.html.haml within layouts/application (79.0ms)
+Completed 200 OK in 220ms (Views: 118.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:50:41 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (19.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 81ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-01 17:50:43 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (0.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/show.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 90ms (Views: 62.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:50:44 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (84.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (110.0ms)
+Completed 200 OK in 145ms (Views: 121.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:50:46 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_34901220__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (72.0ms)
+Completed 200 OK in 108ms (Views: 84.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit" for 127.0.0.1 at 2011-11-01 17:50:49 +0100
+  Processing by CockpitController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3d88988 @original_filename="av-13364.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"av-13364.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1ojh8d9>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 105ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:51:09 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (109.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (144.0ms)
+Completed 200 OK in 184ms (Views: 163.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/kokpit/edycja/haslo" for 127.0.0.1 at 2011-11-01 17:51:10 +0100
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (19.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (32.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (69.0ms)
+Completed 200 OK in 105ms (Views: 81.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:51:11 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (134.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (169.0ms)
+Completed 200 OK in 212ms (Views: 187.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:51:13 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (19.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 105ms (Views: 80.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:51:14 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_41808132__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (48.0ms)
+Completed 200 OK in 109ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:51:24 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (110.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (144.0ms)
+Completed 200 OK in 188ms (Views: 162.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:51:26 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (32.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (70.0ms)
+Completed 200 OK in 106ms (Views: 81.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:51:29 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_36490440__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (72.0ms)
+Completed 200 OK in 108ms (Views: 83.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/kokpit" for 127.0.0.1 at 2011-11-01 17:51:34 +0100
+  Processing by CockpitController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3d90278 @original_filename="av-13364.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"av-13364.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-14wc9ou>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (19.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 107ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" ORDER BY players.id DESC LIMIT 1[0m
+
+
+Started POST "/kokpit" for 127.0.0.1 at 2011-11-01 17:52:48 +0100
+  Processing by CockpitController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x502d4d8 @original_filename="av-13364.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"av-13364.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1ckh8b9>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (19.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (34.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (110.0ms)
+Completed 200 OK in 145ms (Views: 120.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit" for 127.0.0.1 at 2011-11-01 17:52:58 +0100
+  Processing by CockpitController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x4c5ae78 @original_filename="av-13364.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"av-13364.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-nxnvh6>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (19.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 100ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-01 17:53:00 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (1.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (100.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/show.html.haml within layouts/application (129.0ms)
+Completed 200 OK in 176ms (Views: 148.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:53:01 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (126.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (151.0ms)
+Completed 200 OK in 185ms (Views: 160.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:53:03 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_34620600__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (92.0ms)
+Completed 200 OK in 137ms (Views: 103.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:53:06 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x4494a20 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-9tpkqb>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_43836192__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (46.0ms)
+Completed 200 OK in 107ms (Views: 56.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:53:15 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 78ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-01 17:53:17 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (0.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/show.html.haml within layouts/application (38.0ms)
+Completed 200 OK in 85ms (Views: 57.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:53:24 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (84.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (107.0ms)
+Completed 200 OK in 153ms (Views: 118.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-01 17:53:25 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (0.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/show.html.haml within layouts/application (38.0ms)
+Completed 200 OK in 115ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-01 17:53:27 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (1.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/show.html.haml within layouts/application (38.0ms)
+Completed 200 OK in 111ms (Views: 57.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-01 17:53:28 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (0.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/show.html.haml within layouts/application (38.0ms)
+Completed 200 OK in 87ms (Views: 60.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 17:53:29 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (109.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (142.0ms)
+Completed 200 OK in 179ms (Views: 157.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-01 17:53:30 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__445191782_35245872_76898826 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (31.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/show.html.haml within layouts/application (77.0ms)
+Completed 200 OK in 194ms (Views: 95.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:53:34 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (44.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (68.0ms)
+Completed 200 OK in 101ms (Views: 77.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:53:40 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_44274864__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 104ms (Views: 54.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:53:45 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x539d648 @original_filename="photo-19194.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"photo-19194.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1g9fe7y>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_41877240__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (49.0ms)
+Completed 200 OK in 83ms (Views: 60.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:54:05 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x5296020 @original_filename="photo-19194.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"photo-19194.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-z63nao>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (69.0ms)
+Completed 200 OK in 104ms (Views: 80.0ms | ActiveRecord: 1.0ms)
+  [1m[35mPlayer Load (2.0ms)[0m  SELECT "players".* FROM "players" ORDER BY players.id DESC LIMIT 1
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:56:14 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x52a05b0 @original_filename="photo-19194.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"photo-19194.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-oc3xoi>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (69.0ms)
+Completed 200 OK in 103ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-01 17:56:15 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "commit"=>"Aktualizuj Player", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 90ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:56:15 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 125ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:56:19 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 79ms (Views: 55.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-01 17:56:21 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x528b280 @original_filename="demonologia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"demonologia.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-14umdlj>>}, "commit"=>"Aktualizuj Player", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 101ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 17:56:21 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (45.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (69.0ms)
+Completed 200 OK in 104ms (Views: 80.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:56:33 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_43040256__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 104ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:56:36 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x535a178 @original_filename="11085.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"11085.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1c6yt3e>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_41791824__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (46.0ms)
+Completed 200 OK in 80ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:56:53 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x5216310 @original_filename="11085.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"11085.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1vdkg40>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_40160592__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (71.0ms)
+Completed 200 OK in 108ms (Views: 83.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/kokpit" for 127.0.0.1 at 2011-11-01 17:56:54 +0100
+  Processing by CockpitController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (44.0ms)
+Completed 200 OK in 82ms (Views: 55.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:57:01 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_40342260__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (71.0ms)
+Completed 200 OK in 108ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:58:28 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_42982956__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (36.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (73.0ms)
+Completed 200 OK in 108ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:58:31 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x4cc5d20 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-4fvoe4>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_43491528__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (47.0ms)
+Completed 200 OK in 108ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:59:07 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x52f4f88 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-lruq9o>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+ERROR: compiling _app_views_cockpit_avatar_html_haml__1004234460_41864736__363860293 RAISED c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected ':', expecting keyword_end
+...haml_temp =  form_for @player :as => :avatar, :url => avatar...
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_cockpit_avatar_html_haml__1004234460_41864736__363860293(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "cockpit/avatar";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;title "Zmiana avatara"
+haml_temp =  form_for @player :as => :avatar, :url => avatarupdate_path, :html => { :multipart => true } do |f|
+_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( f.file_field :avatar
+));}\n<br>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.1.1/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:441:in `_run__53764109__process_action__390351118__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2/lib/sass/plugin/rack.rb:54:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered cockpit/avatar.html.haml within layouts/cockpit (2.0ms)
+Completed   in 48ms
+
+ActionView::Template::Error (c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected ':', expecting keyword_end
+...haml_temp =  form_for @player :as => :avatar, :url => avatar...
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end):
+    1: -title "Zmiana avatara"
+    2: = form_for @player :as => :avatar, :url => avatarupdate_path, :html => { :multipart => true } do |f|
+    3:   = f.file_field :avatar
+    4:   %br
+    5:   = f.submit
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (37.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (47.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:59:18 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x51fcb88 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-uswqb6>>}, "commit"=>"Aktualizuj Player"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+ERROR: compiling _app_views_cockpit_avatar_html_haml__1004234460_44418048__363860293 RAISED c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected '(', expecting keyword_end
+haml_temp =  form_for @player(:as => :avatar), :url => avat...
+                              ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_cockpit_avatar_html_haml__1004234460_44418048__363860293(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "cockpit/avatar";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;title "Zmiana avatara"
+haml_temp =  form_for @player(:as => :avatar), :url => avatarupdate_path, :html => { :multipart => true } do |f|
+_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( f.file_field :avatar
+));}\n<br>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.1.1/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:441:in `_run__53764109__process_action__390351118__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2/lib/sass/plugin/rack.rb:54:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered cockpit/avatar.html.haml within layouts/cockpit (2.0ms)
+Completed   in 104ms
+
+ActionView::Template::Error (c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected '(', expecting keyword_end
+haml_temp =  form_for @player(:as => :avatar), :url => avat...
+                              ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end):
+    1: -title "Zmiana avatara"
+    2: = form_for @player(:as => :avatar), :url => avatarupdate_path, :html => { :multipart => true } do |f|
+    3:   = f.file_field :avatar
+    4:   %br
+    5:   = f.submit
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:59:28 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+ERROR: compiling _app_views_cockpit_avatar_html_haml__1004234460_43477380__363860293 RAISED c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected ',', expecting ')'
+...haml_temp =  form_for (@player, :as => :avatar), :url => ava...
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_cockpit_avatar_html_haml__1004234460_43477380__363860293(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "cockpit/avatar";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;title "Zmiana avatara"
+haml_temp =  form_for (@player, :as => :avatar), :url => avatarupdate_path, :html => { :multipart => true } do |f|
+_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( f.file_field :avatar
+));}\n<br>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.1.1/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:441:in `_run__53764109__process_action__390351118__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2/lib/sass/plugin/rack.rb:54:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered cockpit/avatar.html.haml within layouts/cockpit (2.0ms)
+Completed   in 61ms
+
+ActionView::Template::Error (c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected ',', expecting ')'
+...haml_temp =  form_for (@player, :as => :avatar), :url => ava...
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end):
+    1: -title "Zmiana avatara"
+    2: = form_for (@player, :as => :avatar), :url => avatarupdate_path, :html => { :multipart => true } do |f|
+    3:   = f.file_field :avatar
+    4:   %br
+    5:   = f.submit
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 17:59:38 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_43047552__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (47.0ms)
+Completed 200 OK in 82ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:00:11 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+ERROR: compiling _app_views_cockpit_avatar_html_haml__1004234460_43471176__363860293 RAISED c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting keyword_end
+...layer, :as => :player), :url => avatarupdate_path, :html => ...
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_cockpit_avatar_html_haml__1004234460_43471176__363860293(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "cockpit/avatar";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;title "Zmiana avatara"
+haml_temp =  form_for(@player, :as => :player), :url => avatarupdate_path, :html => { :multipart => true } do |f|
+_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( f.file_field :avatar
+));}\n<br>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.1.1/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:441:in `_run__53764109__process_action__390351118__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2/lib/sass/plugin/rack.rb:54:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered cockpit/avatar.html.haml within layouts/cockpit (2.0ms)
+Completed   in 61ms
+
+ActionView::Template::Error (c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting keyword_end
+...layer, :as => :player), :url => avatarupdate_path, :html => ...
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end):
+    1: -title "Zmiana avatara"
+    2: = form_for(@player, :as => :player), :url => avatarupdate_path, :html => { :multipart => true } do |f|
+    3:   = f.file_field :avatar
+    4:   %br
+    5:   = f.submit
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:00:17 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+ERROR: compiling _app_views_cockpit_avatar_html_haml__1004234460_43036500__363860293 RAISED c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting keyword_end
+...ayer, :as => :player), :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_cockpit_avatar_html_haml__1004234460_43036500__363860293(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "cockpit/avatar";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;title "Zmiana avatara"
+haml_temp =  form_for(@player, :as => :player), :html => { :multipart => true } do |f|
+_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( f.file_field :avatar
+));}\n<br>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.1.1/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:441:in `_run__53764109__process_action__390351118__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2/lib/sass/plugin/rack.rb:54:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered cockpit/avatar.html.haml within layouts/cockpit (2.0ms)
+Completed   in 38ms
+
+ActionView::Template::Error (c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting keyword_end
+...ayer, :as => :player), :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end):
+    1: -title "Zmiana avatara"
+    2: = form_for(@player, :as => :player), :html => { :multipart => true } do |f|
+    3:   = f.file_field :avatar
+    4:   %br
+    5:   = f.submit
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:00:35 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_41926164__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (93.0ms)
+Completed 200 OK in 129ms (Views: 104.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:01:01 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+ERROR: compiling _app_views_cockpit_avatar_html_haml__1004234460_43044336__363860293 RAISED c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting keyword_end
+...layer, :as => :player), :url => avatarupdate_path, :html => ...
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_cockpit_avatar_html_haml__1004234460_43044336__363860293(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "cockpit/avatar";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;title "Zmiana avatara"
+haml_temp =  form_for(@player, :as => :player), :url => avatarupdate_path, :html => { :multipart => true } do |f|
+_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( f.file_field :avatar
+));}\n<br>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false(( f.submit
+));}\n", 0, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:255:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.1.1/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:441:in `_run__53764109__process_action__390351118__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2/lib/sass/plugin/rack.rb:54:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered cockpit/avatar.html.haml within layouts/cockpit (2.0ms)
+Completed   in 37ms
+
+ActionView::Template::Error (c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting keyword_end
+...layer, :as => :player), :url => avatarupdate_path, :html => ...
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+... => avatarupdate_path, :html => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ml => { :multipart => true } do |f|
+...                               ^
+c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:8: syntax error, unexpected keyword_ensure, expecting $end):
+    1: -title "Zmiana avatara"
+    2: = form_for(@player, :as => :player), :url => avatarupdate_path, :html => { :multipart => true } do |f|
+    3:   = f.file_field :avatar
+    4:   %br
+    5:   = f.submit
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:01:07 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (71.0ms)
+Completed 200 OK in 107ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:01:10 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x4c6ea68 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-65ztsu>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (47.0ms)
+Completed 200 OK in 107ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+  [1m[36mPlayer Load (2.0ms)[0m  [1mSELECT "players".* FROM "players" ORDER BY players.id DESC LIMIT 1[0m
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:01:26 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x534f9a8 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1pl0dgy>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (72.0ms)
+Completed 200 OK in 108ms (Views: 84.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:01:28 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "avatar"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x547c440 @original_filename="demonologia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"avatar[avatar]\"; filename=\"demonologia.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-d32jkh>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (47.0ms)
+Completed 200 OK in 83ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+  [1m[35mPlayer Load (2.0ms)[0m  SELECT "players".* FROM "players" ORDER BY players.id DESC LIMIT 1
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:04:29 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "avatar"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x52c44a8 @original_filename="demonologia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"avatar[avatar]\"; filename=\"demonologia.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-196jnc>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 127ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:04:51 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "avatar"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x52f2e10 @original_filename="demonologia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"avatar[avatar]\"; filename=\"demonologia.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1vgrpg0>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (94.0ms)
+Completed 200 OK in 130ms (Views: 105.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:05:06 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "avatar"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x53c5b00 @original_filename="demonologia.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"avatar[avatar]\"; filename=\"demonologia.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-10vrbwg>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (47.0ms)
+Completed 200 OK in 83ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:05:09 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x529c350 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-tkrg4p>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (72.0ms)
+Completed 200 OK in 108ms (Views: 82.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 18:05:13 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (112.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (146.0ms)
+Completed 200 OK in 257ms (Views: 164.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-01 18:05:14 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__445191782_43702260_76898826 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (32.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (83.0ms)
+Completed 200 OK in 277ms (Views: 126.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 18:05:17 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 108ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-01 18:05:18 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (0.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/show.html.haml within layouts/application (41.0ms)
+Completed 200 OK in 91ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-01 18:07:16 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (0.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/show.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 136ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 18:07:17 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (19.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 81ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:07:18 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_42986400__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (26.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (37.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (117.0ms)
+Completed 200 OK in 152ms (Views: 103.0ms | ActiveRecord: 27.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-11-01 18:07:20 +0100
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x4fdc598 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1bqgi7t>>}, "commit"=>"Aktualizuj Player"}
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" IS NULL) LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (15.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/new.html.haml within layouts/application (44.0ms)
+Completed 200 OK in 187ms (Views: 64.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 18:07:23 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 109ms (Views: 57.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-11-01 18:07:55 +0100
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x52f4c58 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-m8gcz7>>}, "commit"=>"Aktualizuj Player"}
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" IS NULL) LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (16.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/new.html.haml within layouts/application (68.0ms)
+Completed 200 OK in 124ms (Views: 90.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 18:07:56 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (19.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 80ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:07:57 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_42995100__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (34.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (139.0ms)
+Completed 200 OK in 175ms (Views: 151.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:08:00 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x52955d0 @original_filename="av-13364.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"av-13364.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-phvn6a>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_40852716__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (72.0ms)
+Completed 200 OK in 109ms (Views: 84.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:08:09 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x4494198 @original_filename="av-13364.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"av-13364.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-128pi5e>>}, "commit"=>"Aktualizuj Player"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_43307856__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (47.0ms)
+Completed 200 OK in 109ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-01 18:08:11 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (0.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (10.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/show.html.haml within layouts/application (65.0ms)
+Completed 200 OK in 124ms (Views: 87.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-01 18:08:12 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (46.0ms)
+Completed 200 OK in 128ms (Views: 103.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-01 18:08:13 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__1004234460_43274640__363860293 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (11.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (49.0ms)
+Completed 200 OK in 135ms (Views: 61.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-11-01 18:08:18 +0100
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x534ada0 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1v3viu0>>}, "commit"=>"Aktualizuj Player"}
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" IS NULL) LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (16.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/new.html.haml within layouts/application (44.0ms)
+Completed 200 OK in 101ms (Views: 64.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-11-01 18:08:45 +0100
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x529f260 @original_filename="11085.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"11085.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-1hshj12>>}, "commit"=>"Aktualizuj Player"}
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" IS NULL) LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (16.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered players/new.html.haml within layouts/application (44.0ms)
+Completed 200 OK in 147ms (Views: 87.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-11-01 18:09:56 +0100
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNSUCWLfwsu6SoxwsCiLW2Nb8AMDTT4pVTcmdeXTWWg=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x5394e28 @original_filename="50395499.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"50395499.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111101-4904-143p84w>>}, "commit"=>"Aktualizuj Player"}
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" IS NULL) LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (43.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (72.0ms)
+Completed 200 OK in 137ms (Views: 93.0ms | ActiveRecord: 2.0ms)

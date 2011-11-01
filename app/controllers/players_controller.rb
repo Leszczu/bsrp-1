@@ -36,10 +36,10 @@
     @player = current_player
       if @player.update_attributes(params[:player])
         flash[:notice] = 'Zmiany zakończone powodzeniem.'
-        redirect_to change_password_path
+        redirect_to cockpit_path
       else
         flash[:error] = "Napotkano problem #{@player.errors.inspect}"
-        redirect_to change_password_path
+        redirect_to cockpit_path
     end
   end
 
