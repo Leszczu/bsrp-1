@@ -41,9 +41,9 @@ Bsrp::Application.routes.draw do
   # Kokpit > Has³o
   match 'kokpit/edycja/haslo' => 'cockpit#change_password', :as => :change_password
   
-  namespace :player do
-    resource :password, only: [:edit, :update]
-  end
+  #namespace :players do
+  #  resource :password, only: [:edit, :update]
+  # end
   
   # Komentarze
   # resources :news, :has_many => :comments

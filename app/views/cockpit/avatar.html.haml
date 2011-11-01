@@ -1,2 +1,5 @@
-<h1>Cocpit#avatar</h1>
-<p>Find me in app/views/cocpit/avatar.html.erb</p>
+-title "Zmiana avatara"
+-form_for @player, :html => { :multipart => true } do |f|
+  = f.file_field :avatar
+  %br
+  = f.submit

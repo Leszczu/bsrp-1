@@ -21,6 +21,7 @@ class CockpitController < ApplicationController
   end
 
   def avatar
+    @player = current_player
   end
 
   def gallery

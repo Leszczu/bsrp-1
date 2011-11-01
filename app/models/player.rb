@@ -12,10 +12,24 @@
   #validate :validate_old_password, :on => :update
   #validate :validate_new_password, :on => :update
 
+  #has_attached_file :avatar, :styles => { :small => "80x80>" },
+  #                :url  => "/konto/pliki/avatar/:id/:style/:basename.:extension",
+  #                :path => ":rails_root/public/konto/pliki/avatar/:id/:style/:basename.:extension",
+  #                :default_url   => "/images/avatars/default_avatar.png"
+
+  #validates_attachment_presence :avatar
+  #validates_attachment_size :avatar, :less_than => 5.megabytes
+  #validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']
+
   def validate_old_password
     if self.password.nil? || (!self.password_hash.nil? && get_password_hash(self.password) != self.password_hash)
       errors.add(:base, "Wprowazone hasło jest niepoprawne")
     end
+  end
+  
+  def change_password
+    password, password_confirmation = params[:player][:password], params[:player][:password_confirmation]
+    current_player.change_password(password, password_confirmation)
   end
   
   def validate_new_password

@@ -1,9 +1,0 @@
-﻿%h1 Zmiana hasła
--form_for @player do |f|
-  Obecne hasło
-  %p= f.password_field :password
-  %p Wpisz nowe hasło
-  %p= f.password_field :new_password
-  Wpisz ponownie nowe hasło
-  %p= f.password_field :new_password_confirmation
-  = f.submit "Gotowe"
