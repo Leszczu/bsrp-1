@@ -14,6 +14,8 @@ Bsrp::Application.configure do
   config.action_view.debug_rjs             = true
   config.action_controller.perform_caching = false
 
+  # Paperclip.options[:command_path] = "/c/Windows/system32/convert"
+
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
 

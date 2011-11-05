@@ -1,5 +1,6 @@
 ﻿class Player < ActiveRecord::Base
   attr_accessible :name, :password, :password_confirmation, :on => :create
+  attr_accessible :avatar
   has_friendly_id :name, :use_slug => true
   attr_accessor :password, :new_password, :new_password_confirmation
   before_save :encrypt_password
@@ -13,14 +14,14 @@
   #validate :validate_old_password, :on => :update
   #validate :validate_new_password, :on => :update
 
-  #has_attached_file :avatar, :styles => { :small => "80x80>" },
-  #                :url  => "/konto/pliki/avatar/:id/:style/:basename.:extension",
-  #                :path => ":rails_root/public/konto/pliki/avatar/:id/:style/:basename.:extension",
-  #                :default_url   => "/images/avatars/default_avatar.png"
+  has_attached_file :avatar, :styles => { :small => "80x80>" },
+                  :url  => "/konto/pliki/avatar/:id/:style/:basename.:extension",
+                  :path => ":rails_root/public/konto/pliki/avatar/:id/:style/:basename.:extension",
+                  :default_url   => "/images/avatars/default_avatar.png"
 
-  #validates_attachment_presence :avatar
-  #validates_attachment_size :avatar, :less_than => 5.megabytes
-  #validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']
+  validates_attachment_presence :avatar
+  validates_attachment_size :avatar, :less_than => 5.megabytes
+  validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']
 
   #def validate_old_password
   #  if self.password.nil? || (!self.password_hash.nil? && get_password_hash(self.password) != self.password_hash)

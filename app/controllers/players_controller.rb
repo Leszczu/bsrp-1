@@ -32,7 +32,6 @@
   end
   
   def update
-  
     @player = current_player
       if @player.update_attributes(params[:player])
         flash[:notice] = 'Zmiany zakończone powodzeniem.'

@@ -40650,3 +40650,2153 @@ Rendered layouts/home/_header.html.haml (2.0ms)
 Rendered layouts/home/_side.html.haml (20.0ms)
 Rendered news/show.html.haml within layouts/application (81.0ms)
 Completed 200 OK in 241ms (Views: 120.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:45:07 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (127.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (157.0ms)
+Completed 200 OK in 218ms (Views: 181.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-05 16:45:31 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__303566422_22803432__24798034 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (23.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (80.0ms)
+Completed 200 OK in 181ms (Views: 96.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:45:33 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (83.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (114.0ms)
+Completed 200 OK in 169ms (Views: 129.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:47:48 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (83.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (116.0ms)
+Completed 200 OK in 153ms (Views: 133.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 16:47:49 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (34.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (56.0ms)
+Completed 200 OK in 84ms (Views: 68.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 16:47:51 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml__493434645_29997252_160493021 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:2)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (8.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (5.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (60.0ms)
+Completed 200 OK in 88ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/edycja/haslo" for 127.0.0.1 at 2011-11-05 16:47:53 +0100
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/change_password.html.haml within layouts/cockpit (1.0ms)
+Completed   in 46ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    1: ﻿-title "Zmiana hasła"%h1 Zmiana hasła%p= form_for @player do |f|	%table		%tr			%td= f.label 'Imię oraz nazwisko postaci'			%td= f.text_field :name		%td= submit_tag "Zmieniaj nazwę!"
+  app/views/cockpit/change_password.html.haml:4
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/kokpit/edycja/haslo" for 127.0.0.1 at 2011-11-05 16:47:58 +0100
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (41.0ms)
+Completed 200 OK in 69ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 16:48:01 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ni8FgNTWRDFvuhBkJry5jlkAW6+EqaEvcgTm6DW+W3M=", "player"=>{"name"=>"Bangeuszek"}, "commit"=>"Zmieniaj nazwę!", "id"=>"bangeusz"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeuszek') AND ("players".id <> 4) LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mAREL (1.0ms)[0m  UPDATE "players" SET "name" = 'Bangeuszek', "updated_at" = '2011-11-05 15:48:01.427073' WHERE "players"."id" = 4
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE "slugs"."name" = 'bangeuszek' AND "slugs"."scope" IS NULL AND ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "slugs" WHERE "slugs"."name" = 'bangeuszek' AND "slugs"."scope" IS NULL AND "slugs"."sluggable_type" = 'Player'
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "slugs" ("name", "sluggable_id", "sequence", "sluggable_type", "scope", "created_at") VALUES ('bangeuszek', 4, 1, 'Player', NULL, '2011-11-05 15:48:01.438074')[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 228ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 16:48:01 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (16.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (27.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (61.0ms)
+Completed 200 OK in 88ms (Views: 72.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit/edycja/haslo" for 127.0.0.1 at 2011-11-05 16:48:04 +0100
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (61.0ms)
+Completed 200 OK in 89ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeuszek" for 127.0.0.1 at 2011-11-05 16:48:08 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ni8FgNTWRDFvuhBkJry5jlkAW6+EqaEvcgTm6DW+W3M=", "player"=>{"name"=>"Bangeusz"}, "commit"=>"Zmieniaj nazwę!", "id"=>"bangeuszek"}
+  [1m[36mPlayer Load (22.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "players" SET "name" = 'Bangeusz', "updated_at" = '2011-11-05 15:48:08.327367' WHERE "players"."id" = 4
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE "slugs"."name" = 'bangeusz' AND "slugs"."scope" IS NULL AND ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "slugs" WHERE "slugs"."id" = 10
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "slugs" WHERE "slugs"."name" = 'bangeusz' AND "slugs"."scope" IS NULL AND "slugs"."sluggable_type" = 'Player'[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "slugs" ("name", "sluggable_id", "sequence", "sluggable_type", "scope", "created_at") VALUES ('bangeusz', 4, 1, 'Player', NULL, '2011-11-05 15:48:08.330368')
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 195ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 16:48:08 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (16.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (40.0ms)
+Completed 200 OK in 88ms (Views: 51.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 16:51:24 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+Completed   in 16ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x38dd008>):
+  app/models/player.rb:16:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:9:in `current_player'
+  app/controllers/application_controller.rb:13:in `log_in?'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 16:51:30 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed   in 17ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x2bfdaa8>):
+  app/models/player.rb:16:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:9:in `current_player'
+  app/controllers/application_controller.rb:13:in `log_in?'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:51:32 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Rendered news/_news.html.haml (31.0ms)
+Rendered news/index.html.haml within layouts/application (37.0ms)
+Completed   in 101ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x398b5f0>):
+    2:   %h1= news.title
+    3:   %p<>
+    4:     Dodał
+    5:     =link_to news.player.name, playershow_path(news.player)
+    6:     |
+    7:     Dodane
+    8:     =time_ago_in_words(news.created_at)
+  app/models/player.rb:16:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/views/news/_news.html.haml:5:in `block in _app_views_news__news_html_haml__617918731_29958984__219064594'
+  app/views/news/_news.html.haml:1:in `each'
+  app/views/news/_news.html.haml:1:in `_app_views_news__news_html_haml__617918731_29958984__219064594'
+  app/views/news/index.html.haml:3:in `_app_views_news_index_html_haml__558182460_29932248_160493021'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:51:37 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Rendered news/_news.html.haml (51.0ms)
+Rendered news/index.html.haml within layouts/application (58.0ms)
+Completed   in 103ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x397db98>):
+    2:   %h1= news.title
+    3:   %p<>
+    4:     Dodał
+    5:     =link_to news.player.name, playershow_path(news.player)
+    6:     |
+    7:     Dodane
+    8:     =time_ago_in_words(news.created_at)
+  app/models/player.rb:16:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/views/news/_news.html.haml:5:in `block in _app_views_news__news_html_haml__617918731_30147408__219064594'
+  app/views/news/_news.html.haml:1:in `each'
+  app/views/news/_news.html.haml:1:in `_app_views_news__news_html_haml__617918731_30147408__219064594'
+  app/views/news/index.html.haml:3:in `_app_views_news_index_html_haml__558182460_30134772_160493021'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:51:40 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Rendered news/_news.html.haml (30.0ms)
+Rendered news/index.html.haml within layouts/application (37.0ms)
+Completed   in 74ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x39aaad8>):
+    2:   %h1= news.title
+    3:   %p<>
+    4:     Dodał
+    5:     =link_to news.player.name, playershow_path(news.player)
+    6:     |
+    7:     Dodane
+    8:     =time_ago_in_words(news.created_at)
+  app/models/player.rb:16:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/views/news/_news.html.haml:5:in `block in _app_views_news__news_html_haml__617918731_30004812__219064594'
+  app/views/news/_news.html.haml:1:in `each'
+  app/views/news/_news.html.haml:1:in `_app_views_news__news_html_haml__617918731_30004812__219064594'
+  app/views/news/index.html.haml:3:in `_app_views_news_index_html_haml__558182460_29977164_160493021'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:51:45 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (87.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (142.0ms)
+Completed 200 OK in 190ms (Views: 165.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-05 16:51:59 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__303566422_23018556__24798034 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (23.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (87.0ms)
+Completed 200 OK in 190ms (Views: 106.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:52:03 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (89.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (121.0ms)
+Completed 200 OK in 179ms (Views: 140.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/?page=2&_=1320508327209" for 127.0.0.1 at 2011-11-05 16:52:07 +0100
+  Processing by NewsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1320508327209"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 4)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 5)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 6)[0m
+Rendered news/_news.html.haml (89.0ms)
+Rendered news/index.js.erb (95.0ms)
+Completed 200 OK in 175ms (Views: 128.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/?_=1320508328779&page=1" for 127.0.0.1 at 2011-11-05 16:52:08 +0100
+  Processing by NewsController#index as JS
+  Parameters: {"_"=>"1320508328779", "page"=>"1"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (107.0ms)
+Rendered news/index.js.erb (113.0ms)
+Completed 200 OK in 162ms (Views: 147.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:54:12 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (117.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (162.0ms)
+Completed 200 OK in 240ms (Views: 178.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 16:54:23 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (39.0ms)
+Completed 200 OK in 84ms (Views: 48.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/haslo" for 127.0.0.1 at 2011-11-05 16:54:24 +0100
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (16.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (21.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (53.0ms)
+Completed 200 OK in 99ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/haslo" for 127.0.0.1 at 2011-11-05 16:54:53 +0100
+  Processing by CockpitController#change_password as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (55.0ms)
+Completed 200 OK in 83ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 16:54:56 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ni8FgNTWRDFvuhBkJry5jlkAW6+EqaEvcgTm6DW+W3M=", "player"=>{"avatar"=>"Koala.jpg"}, "commit"=>"Stwórz postać!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 151ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 16:54:56 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (38.0ms)
+Completed 200 OK in 67ms (Views: 49.0ms | ActiveRecord: 2.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" ORDER BY players.id DESC LIMIT 1[0m
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 16:57:32 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (40.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 93ms (Views: 76.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 16:57:33 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)
+Rendered news/_news.html.haml (93.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered news/index.html.haml within layouts/application (125.0ms)
+Completed 200 OK in 186ms (Views: 145.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-05 16:57:35 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (8.0ms)
+Rendered layouts/home/_side.html.haml (4.0ms)
+Rendered players/show.html.haml within layouts/application (36.0ms)
+Completed 200 OK in 79ms (Views: 57.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 17:07:58 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (40.0ms)
+Completed 200 OK in 69ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/edycja/haslo" for 127.0.0.1 at 2011-11-05 17:07:59 +0100
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 96ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 17:08:03 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ni8FgNTWRDFvuhBkJry5jlkAW6+EqaEvcgTm6DW+W3M=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3471090 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-4648-ymuyx7>>}, "commit"=>"Stwórz postać!", "id"=>"bangeusz"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 68ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 17:08:03 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (41.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 95ms (Views: 77.0ms | ActiveRecord: 3.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" ORDER BY players.id DESC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 18:48:20 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (7.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (144.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (19.0ms)
+Rendered news/index.html.haml within layouts/application (191.0ms)
+Completed 200 OK in 313ms (Views: 214.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-11-05 18:48:29 +0100
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 55ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-11-05 18:48:33 +0100
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "name"=>"Bangeusz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Bangeusz' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 102ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 18:48:33 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)
+Rendered news/_news.html.haml (103.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (19.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (151.0ms)
+Completed 200 OK in 190ms (Views: 172.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 18:48:34 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (50.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (23.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (127.0ms)
+Completed 200 OK in 215ms (Views: 196.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/haslo" for 127.0.0.1 at 2011-11-05 18:48:36 +0100
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (77.0ms)
+Completed 200 OK in 107ms (Views: 88.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 18:48:53 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+Rendered cockpit/avatar.html.haml within layouts/cockpit (1.0ms)
+Completed   in 52ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+-title "Zmiana has�a"
+%h1 Zmiana has�a
+= form_for @player, :html => { :multipart => true } do |f|
+  %table
+    %tr
+      %td= f.label 'Avatar'
+      %td= f.file_field :avatar
+    %td= submit_tag "Zmie� avatar!"):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 18:48:58 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (58.0ms)
+Completed 200 OK in 88ms (Views: 70.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 18:49:02 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (61.0ms)
+Completed 200 OK in 91ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 18:49:08 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x346f920 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-1kmvw0j>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 173ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 18:49:08 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 72ms (Views: 53.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 18:49:23 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)
+Rendered news/_news.html.haml (92.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (28.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (150.0ms)
+Completed 200 OK in 204ms (Views: 179.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 18:49:24 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (41.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 95ms (Views: 76.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-05 18:50:58 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (9.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/show.html.haml within layouts/application (37.0ms)
+Completed 200 OK in 107ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 18:51:01 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 100ms (Views: 53.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-05 18:51:03 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (9.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/show.html.haml within layouts/application (36.0ms)
+Completed 200 OK in 82ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 18:51:05 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)
+Rendered news/_news.html.haml (104.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (6.0ms)
+Rendered news/index.html.haml within layouts/application (140.0ms)
+Completed 200 OK in 178ms (Views: 159.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-05 18:51:10 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__752883117_43026432_772576334 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (24.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (75.0ms)
+Completed 200 OK in 184ms (Views: 96.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2011-11-05 18:56:53 +0100
+  Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "comment"=>{"news_id"=>"1", "player_id"=>"4", "body"=>"I chuj kurwa, avatary nie działają."}, "commit"=>"Dodaj komentarz"}
+  [1m[36mAREL (1.0ms)[0m  [1mINSERT INTO "comments" ("news_id", "player_id", "body", "created_at", "updated_at") VALUES (1, 4, 'I chuj kurwa, avatary nie działają.', '2011-11-05 17:56:53.791144', '2011-11-05 17:56:53.791144')[0m
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."id" = 1 LIMIT 1
+Redirected to http://localhost:3000/news/zmiany-zmiany-zmiany#comments
+Completed 302 Found in 178ms
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-05 18:56:53 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mPlayer Load (25.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__752883117_17181216_772576334 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (25.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (94.0ms)
+Completed 200 OK in 201ms (Views: 89.0ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 18:56:58 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)
+Rendered news/_news.html.haml (94.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (128.0ms)
+Completed 200 OK in 189ms (Views: 147.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 18:56:59 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (41.0ms)
+Completed 200 OK in 94ms (Views: 52.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/haslo" for 127.0.0.1 at 2011-11-05 18:57:00 +0100
+  Processing by CockpitController#change_password as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/change_password.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 74ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/galeria" for 127.0.0.1 at 2011-11-05 18:57:02 +0100
+  Processing by CockpitController#gallery as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (31.0ms)
+Rendered cockpit/gallery.html.haml within layouts/cockpit (66.0ms)
+Completed 200 OK in 96ms (Views: 77.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 18:57:02 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 102ms (Views: 76.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 18:57:11 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3469548 @original_filename="Chrysanthemum.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Chrysanthemum.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-1lo7lim>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 56ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 18:57:12 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (41.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 95ms (Views: 76.0ms | ActiveRecord: 3.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" ORDER BY players.id DESC LIMIT 1[0m
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 18:59:33 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 98ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 18:59:36 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3451440 @original_filename="Desert.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Desert.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-mmj2um>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 58ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 18:59:36 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (24.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (40.0ms)
+Completed 200 OK in 95ms (Views: 52.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:02:30 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (41.0ms)
+Completed 200 OK in 99ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:02:33 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x34642f8 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-136zjal>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 75ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:02:33 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (41.0ms)
+Completed 200 OK in 96ms (Views: 53.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:03:45 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+Rendered cockpit/avatar.html.haml within layouts/cockpit (2.0ms)
+Completed   in 34ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"players"}):
+    1: ﻿-title "Zmiana hasła"
+    2: %h1 Zmiana hasła
+    3: = form_for :player, @player, :url => player_path, :html => { :multipart => true } do |f|
+    4:   %table
+    5:     %tr
+    6:       %td= f.file_field :avatar
+  app/views/cockpit/avatar.html.haml:3:in `_app_views_cockpit_avatar_html_haml___380158132_42837276__885454407'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:03:50 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml___380158132_42654936__885454407 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:3)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (9.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (68.0ms)
+Completed 200 OK in 98ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-11-05 19:03:53 +0100
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x342be68 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-16od6v6>>}, "commit"=>"Zmień avatar!"}
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" IS NULL) LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (38.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 117ms (Views: 86.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-11-05 19:04:02 +0100
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x345e940 @original_filename="Chrysanthemum.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Chrysanthemum.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-f9z80h>>}, "commit"=>"Zmień avatar!"}
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" IS NULL) LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (13.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 133ms (Views: 62.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-11-05 19:05:09 +0100
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x32ba1c0 @original_filename="Chrysanthemum.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Chrysanthemum.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-158b2cn>>}, "commit"=>"Zmień avatar!"}
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" IS NULL) LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (13.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (39.0ms)
+Completed 200 OK in 92ms (Views: 61.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:05:11 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (42.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (66.0ms)
+Completed 200 OK in 107ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:05:11 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml___380158132_22118532__885454407 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (8.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 98ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:05:15 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3476910 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-14mbepg>>}, "commit"=>"Zmień avatar!"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+DEPRECATION WARNING: Using form_for(:name, @resource) is deprecated. Please use form_for(@resource, :as => :name) instead. (called from _app_views_cockpit_avatar_html_haml___380158132_41881776__885454407 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/cockpit/avatar.html.haml:3)
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (9.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (72.0ms)
+Completed 200 OK in 118ms (Views: 90.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 19:05:27 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)
+Rendered news/_news.html.haml (124.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (157.0ms)
+Completed 200 OK in 194ms (Views: 175.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-05 19:05:28 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__752883117_43369956_772576334 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (50.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (94.0ms)
+Completed 200 OK in 207ms (Views: 114.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-05 19:05:41 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[36mNews Load (0.0ms)[0m  [1mSELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__752883117_43369824_772576334 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (51.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (93.0ms)
+Completed 200 OK in 204ms (Views: 112.0ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:05:44 +0100
+  Processing by CockpitController#avatar as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3452af0 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-10rb242>>}, "commit"=>"Zmień avatar!"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (66.0ms)
+Completed 200 OK in 98ms (Views: 78.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:05:46 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3457bf0 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-itp8fp>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 33ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:05:46 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (42.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (66.0ms)
+Completed 200 OK in 98ms (Views: 78.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:06:55 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed   in 42ms
+
+NoMethodError (undefined method `avatar_changed?' for #<Class:0x5222d00>):
+  app/models/player.rb:22:in `<class:Player>'
+  app/models/player.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:9:in `current_player'
+  app/controllers/application_controller.rb:13:in `log_in?'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:07:42 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 109ms (Views: 52.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:07:42 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (41.0ms)
+Completed 200 OK in 73ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:07:43 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (9.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (92.0ms)
+Completed 200 OK in 138ms (Views: 108.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:07:47 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x2afb9b8 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-16woion>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 32ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:07:47 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (41.0ms)
+Completed 200 OK in 72ms (Views: 52.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:11:18 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (66.0ms)
+Completed 200 OK in 97ms (Views: 76.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:11:22 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKDnOu+B0fSU1vwypoCwQwW0IXofyH5GAuToIduxsuA=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x342fe58 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-1wlbdvz>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 32ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:11:22 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (31.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 98ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-05 19:12:22 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__752883117_43281060_772576334 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (25.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (68.0ms)
+Completed 200 OK in 182ms (Views: 89.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-05 19:15:17 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (0.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mComment Load (1.0ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__752883117_16916508_772576334 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (25.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (93.0ms)
+Completed 200 OK in 207ms (Views: 111.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 19:15:20 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (98.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (131.0ms)
+Completed 200 OK in 194ms (Views: 151.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/?page=2&_=1320516922944" for 127.0.0.1 at 2011-11-05 19:15:22 +0100
+  Processing by NewsController#index as JS
+  Parameters: {"page"=>"2", "_"=>"1320516922944"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 4)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 5)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 6)[0m
+Rendered news/_news.html.haml (96.0ms)
+Rendered news/index.js.erb (105.0ms)
+Completed 200 OK in 212ms (Views: 158.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:15:24 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 99ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-05 19:15:26 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (0.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (8.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/show.html.haml within layouts/application (36.0ms)
+Completed 200 OK in 81ms (Views: 57.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/konto/wyloguj" for 127.0.0.1 at 2011-11-05 19:15:28 +0100
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 19:15:28 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (94.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (151.0ms)
+Completed 200 OK in 188ms (Views: 172.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/konto/rejestracja" for 127.0.0.1 at 2011-11-05 19:15:30 +0100
+  Processing by PlayersController#new as HTML
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/new.html.haml within layouts/application (59.0ms)
+Completed 200 OK in 99ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-11-05 19:15:31 +0100
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (4.0ms)
+Rendered layouts/home/_side.html.haml (7.0ms)
+Rendered sessions/new.html.haml within layouts/application (39.0ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 19:18:15 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (98.0ms)
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (128.0ms)
+Completed 200 OK in 166ms (Views: 148.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/konto/logowanie" for 127.0.0.1 at 2011-11-05 19:18:18 +0100
+  Processing by SessionsController#new as HTML
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered sessions/new.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 49ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-11-05 19:18:21 +0100
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "name"=>"Bangeusz", "password"=>"[FILTERED]", "commit"=>"Zaloguj się!"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."name" = 'Bangeusz' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 136ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 19:18:21 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)
+Rendered news/_news.html.haml (100.0ms)
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (134.0ms)
+Completed 200 OK in 195ms (Views: 175.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:18:22 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 110ms (Views: 53.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:18:23 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 99ms (Views: 54.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:18:26 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x346ed80 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-1f0618j>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: avatar
+  [1m[35mSQL (0.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 56ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:18:26 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 97ms (Views: 53.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:23:43 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (26.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (49.0ms)
+Completed 200 OK in 94ms (Views: 65.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:23:44 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (27.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (69.0ms)
+Completed 200 OK in 99ms (Views: 79.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:23:46 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x31bed30 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-3s7trz>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-2884-1rke14n.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-2884-1rke14n.jpg is not recognized by the 'identify' command.>
+  [1m[35mSQL (1.0ms)[0m  SELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 204ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:23:46 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+Rendered layouts/home/_header.html.haml (43.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 107ms (Views: 78.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:25:50 +0100
+  Processing by CockpitController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+Rendered cockpit/index.html.haml within layouts/cockpit (1.0ms)
+Completed   in 77ms
+
+ActionView::Template::Error (Your template was not saved as valid UTF-8. Please either specify UTF-8 as the encoding for your template in your text editor, or mark the template with its encoding by inserting the following as the first line of the template:
+
+# encoding: <name of correct encoding>.
+
+The source of your template was:
+
+%h1 Kokpit gracza
+%p Witaj w kokpicie gracza, tutaj mo�esz napierdala� salta.):
+  
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:25:55 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (45.0ms)
+Completed 200 OK in 119ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/konto/bangeusz" for 127.0.0.1 at 2011-11-05 19:26:00 +0100
+  Processing by PlayersController#show as HTML
+  Parameters: {"cached_slug"=>"bangeusz"}
+  [1m[35mSQL (0.0ms)[0m  SELECT sluggable_id FROM slugs WHERE ((slugs.sluggable_type = 'Player' AND slugs.name = 'bangeusz' AND slugs.sequence = 1))
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (9.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered players/show.html.haml within layouts/application (37.0ms)
+Completed 200 OK in 83ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:26:01 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 74ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 19:28:30 +0100
+  Processing by NewsController#index as HTML
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news"
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (106.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (142.0ms)
+Completed 200 OK in 198ms (Views: 172.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/news/zmiany-zmiany-zmiany" for 127.0.0.1 at 2011-11-05 19:29:08 +0100
+  Processing by NewsController#show as HTML
+  Parameters: {"cached_slug"=>"zmiany-zmiany-zmiany"}
+  [1m[35mNews Load (1.0ms)[0m  SELECT "news".* FROM "news" WHERE "news"."cached_slug" = 'zmiany-zmiany-zmiany' LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE ("comments".news_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 2 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_comments__comment_html_haml__752883117_43160532_772576334 at c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views/comments/_comment.html.haml:16)
+Rendered comments/_comment.html.haml (25.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/show.html.haml within layouts/application (68.0ms)
+Completed 200 OK in 194ms (Views: 90.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:30:05 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (31.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 98ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:30:06 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (68.0ms)
+Completed 200 OK in 100ms (Views: 80.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:30:09 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x29bb510 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-2884-1ga52xd>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-2884-f6vmsw.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-2884-f6vmsw.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 153ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:30:10 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (44.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (68.0ms)
+Completed 200 OK in 98ms (Views: 79.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-05 19:30:48 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (20.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (123.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (25.0ms)
+Rendered news/index.html.haml within layouts/application (191.0ms)
+Completed 200 OK in 275ms (Views: 190.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:30:54 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (51.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (79.0ms)
+Completed 200 OK in 125ms (Views: 96.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:30:55 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 121ms (Views: 53.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:30:58 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x34da090 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-1592-e6n5u6>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-1592-8uego3.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-1592-8uego3.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 176ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:30:58 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (31.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (56.0ms)
+Completed 200 OK in 87ms (Views: 67.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:32:32 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 137ms (Views: 78.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:32:40 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3426660 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-3280-1mmo0we>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-1amk1qk.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-1amk1qk.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 215ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:32:40 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (30.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (8.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (55.0ms)
+Completed 200 OK in 86ms (Views: 66.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:36:11 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (41.0ms)
+Completed 200 OK in 96ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/gracze/online" for 127.0.0.1 at 2011-11-05 19:36:12 +0100
+  Processing by CockpitController#online as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (32.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/online.html.haml within layouts/cockpit (57.0ms)
+Completed 200 OK in 88ms (Views: 68.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:36:13 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (23.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (80.0ms)
+Completed 200 OK in 126ms (Views: 97.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:36:15 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x2cd4380 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-3280-1d7p8cf>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-7uzhye.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-7uzhye.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 169ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:36:16 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (38.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (62.0ms)
+Completed 200 OK in 93ms (Views: 73.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:39:21 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x2acab00 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-3280-1akc003>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-1xd57dy.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-1xd57dy.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 175ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:39:21 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (37.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (60.0ms)
+Completed 200 OK in 94ms (Views: 72.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:41:29 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 110ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:41:32 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x3409dd0 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-3280-onpr79>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-1s18507.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-1s18507.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 115ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:41:32 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (40.0ms)
+Completed 200 OK in 90ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:41:45 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (3.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (42.0ms)
+Completed 200 OK in 98ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:41:48 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x29a1878 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-3280-1n9l8ym>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-1bv5610.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3280-1bv5610.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 148ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:41:48 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (40.0ms)
+Completed 200 OK in 89ms (Views: 52.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:42:52 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 140ms (Views: 80.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:43:02 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x35c3130 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-3372-i3zbot>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3372-1snk2e6.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3372-1snk2e6.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 172ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:43:02 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (30.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (56.0ms)
+Completed 200 OK in 86ms (Views: 66.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:46:12 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (60.0ms)
+Completed 200 OK in 91ms (Views: 73.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:46:14 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x2b4c3d0 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-3372-dx0tzp>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3372-1vuupe1.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3372-1vuupe1.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 177ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:46:15 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (41.0ms)
+Completed 200 OK in 89ms (Views: 52.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/edycja/avatar" for 127.0.0.1 at 2011-11-05 19:46:19 +0100
+  Processing by CockpitController#avatar as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (2.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (21.0ms)
+Rendered cockpit/avatar.html.haml within layouts/cockpit (58.0ms)
+Completed 200 OK in 101ms (Views: 72.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/players/bangeusz" for 127.0.0.1 at 2011-11-05 19:46:22 +0100
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSFOoofSPS9/1lCtTm1Y6xiqzOUKglRZ7gKs4u4Ixlw=", "player"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x2b52988 @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"player[avatar]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Bangeusz/AppData/Local/Temp/RackMultipart20111105-3372-116ndaz>>}, "commit"=>"Zmień avatar!", "id"=>"bangeusz"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+[32mCommand[0m :: identify -format %wx%h "C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3372-14aa2h1.jpg[0]"
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: C:/Users/Bangeusz/AppData/Local/Temp/stream20111105-3372-14aa2h1.jpg is not recognized by the 'identify' command.>
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT 1 FROM "players" WHERE ("players"."name" = 'Bangeusz') AND ("players".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/kokpit
+Completed 302 Found in 151ms
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-05 19:46:22 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (16.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (21.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (56.0ms)
+Completed 200 OK in 88ms (Views: 68.0ms | ActiveRecord: 2.0ms)
