@@ -6,7 +6,7 @@
       =distance_of_time_in_words(c.created_at, Time.now)
       temu.
     %p
-      = image_tag 'avatars/default_avatar.png'
+      = image_tag c.avatar.url
       %br
       %b=link_to c.player.name, playershow_path(c.player)
     %br
