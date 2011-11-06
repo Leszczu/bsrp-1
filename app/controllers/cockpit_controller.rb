@@ -27,9 +27,13 @@
   def defaultavatar
     @player = current_player
     @player.avatar = nil
-    @player.save
-    notice[:flash] = 'Avatar został usunięty'
-    redirect_to cockpit_path
+    if @player.save
+      notice[:flash] = 'Avatar został usunięty'
+      redirect_to cockpit_path
+    else
+      notice[:error] = 'Wystąpił błąd podczas usuwania avatara'
+      redirect_to cockpit_path
+    end
   end
 
   def gallery
