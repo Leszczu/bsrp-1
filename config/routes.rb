@@ -1,7 +1,4 @@
 Bsrp::Application.routes.draw do
-
-  get "comments/_comment"
-
   # Resources
   resources :players
   resources :sessions
@@ -37,10 +34,13 @@ Bsrp::Application.routes.draw do
   match 'kokpit/gracze/online' => 'cockpit#online', :as => :online
   match 'kokpit/edycja/avatar' => 'cockpit#avatar', :as => :avatar
   match 'kokpit/galeria' => 'cockpit#gallery', :as => :gallery
-  
-  # Kokpit > Has³o
   match 'kokpit/edycja/haslo' => 'cockpit#change_password', :as => :change_password
-  match 'kokpit/edycja/avatar/usun' => 'cockpit#defaultavatar', :as => :defaultavatar
+
+  # Podstrony
+  match 'administracja' => 'home#admins', :as => :admins
+  match 'organizacje' => 'home#organizations', :as => :organizations
+  match 'ostatnie-zmiany' => 'home#last_changes', :as => :last_changes
+  match 'kontakt' => 'home#contact', :as => :contact
 
   #namespace :players do
   #  resource :password, only: [:edit, :update]
@@ -54,13 +54,6 @@ Bsrp::Application.routes.draw do
   #     match "edytuj" => "players#edit", :as => :edit_profile
   #     match "/" => "players#index", :as => :account
   # end
-  
-  # Podstrony
-  match 'administracja' => 'home#admins', :as => :admins
-  match 'organizacje' => 'home#organizations', :as => :organizations
-  match 'ostatnie-zmiany' => 'home#last_changes', :as => :last_changes
-  match 'kontakt' => 'home#contact', :as => :contact
-  
   
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
