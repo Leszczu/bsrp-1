@@ -6,3 +6,13 @@ $(function() {
 	return false;
   });
 });
+
+$(document).ready(function(){
+    $('.skins').click(function(){
+      $('.skins').animate({opacity: 1 }, 500);
+      $(this).animate({opacity: 0.67 }, 500);
+      wybranyskin = $(this).attr("id");
+      $('#skin').val('value', wybranyskin);
+      $('#player_skin').val(wybranyskin);
+    });
+});

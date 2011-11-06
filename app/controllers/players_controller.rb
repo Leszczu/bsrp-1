@@ -34,9 +34,8 @@
   def update
     @player = current_player
       if @player.update_attributes(params[:player])
-        flash[:notice] = 'Zmiany zakończone powodzeniem.'
         respond_to do |format|
-          format.html { redirect_to cockpit_path }
+          format.html { redirect_to(:back) }
           format.js
         end
       else
