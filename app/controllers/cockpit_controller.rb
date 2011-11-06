@@ -1,4 +1,4 @@
-class CockpitController < ApplicationController
+﻿class CockpitController < ApplicationController
 
   before_filter :log_in?
 
@@ -22,6 +22,14 @@ class CockpitController < ApplicationController
 
   def avatar
     @player = current_player
+  end
+  
+  def defaultavatar
+    @player = current_player
+    @player.avatar = nil
+    @player.save
+    notice[:flash] = 'Avatar został usunięty'
+    redirect_to cockpit_path
   end
 
   def gallery
