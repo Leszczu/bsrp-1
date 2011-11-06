@@ -17,7 +17,7 @@
     if @player.save
       redirect_to root_url, :notice => "Konto utworzone!"
     else
-      flash[:error] = 'Wystąpił jakiś błąd, sprawdź i spróbuj ponownie'
+      flash[:error] = "Napotkano problem #{@player.errors.inspect}"
       render "new"
     end
   end

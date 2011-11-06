@@ -19,7 +19,8 @@
                   :path => ":rails_root/public/konto/pliki/avatar/:id/:style/:basename.:extension",
                   :default_url   => "/images/avatars/default_avatar.png"
 
-  validates_attachment_presence :avatar
+  # Avatar nie jest wymagany, opcjonalnie
+  # validates_attachment_presence :avatar
   validates_attachment_size :avatar, :less_than => 5.megabytes
   validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']
 
