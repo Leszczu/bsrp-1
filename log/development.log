@@ -43674,3 +43674,479 @@ Rendered layouts/home/_header.html.haml (36.0ms)
 Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
 Rendered cockpit/index.html.haml within layouts/cockpit (58.0ms)
 Completed 200 OK in 88ms (Views: 70.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-06 12:29:54 +0100
+  Processing by NewsController#index as HTML
+  [1m[36mNews Load (1.0ms)[0m  [1mSELECT "news".* FROM "news"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mSlug Load (1.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 1 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE ("comments".news_id = 3)[0m
+Rendered news/_news.html.haml (142.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (5.0ms)
+Rendered layouts/home/_side.html.haml (5.0ms)
+Rendered news/index.html.haml within layouts/application (176.0ms)
+Completed 200 OK in 244ms (Views: 193.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/kokpit" for 127.0.0.1 at 2011-11-06 12:30:00 +0100
+  Processing by CockpitController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/index.html.haml within layouts/cockpit (41.0ms)
+Completed 200 OK in 106ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:30:01 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (21.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (55.0ms)
+Completed 200 OK in 106ms (Views: 66.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:30:42 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (32.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (9.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (60.0ms)
+Completed 200 OK in 91ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:30:52 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (51.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (76.0ms)
+Completed 200 OK in 107ms (Views: 88.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:31:12 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (32.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (60.0ms)
+Completed 200 OK in 135ms (Views: 71.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:31:15 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (38.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (82.0ms)
+Completed 200 OK in 114ms (Views: 95.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:31:23 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (20.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (21.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 155ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:31:46 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (51.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (78.0ms)
+Completed 200 OK in 109ms (Views: 89.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:32:37 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (32.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (59.0ms)
+Completed 200 OK in 90ms (Views: 70.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:32:52 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (51.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (78.0ms)
+Completed 200 OK in 109ms (Views: 88.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:32:54 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (43.0ms)
+Completed 200 OK in 109ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:34:31 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/skins.html.haml within layouts/cockpit (6.0ms)
+Completed   in 60ms
+
+ActionView::Template::Error (Missing partial cockpit/skin with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml, :haml], :formats=>[:html], :locale=>[:pl, :pl]} in view paths "c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views"):
+    1: ﻿-title "Zmiana ubrania > Bayside Role Play"
+    2: %h1 Zmiana ubrania
+    3: =render 'skin'
+  app/views/cockpit/skins.html.haml:3:in `_app_views_cockpit_skins_html_haml___118898978_17460636_687083392'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:35:17 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1[0m
+Rendered cockpit/skins.html.haml within layouts/cockpit (6.0ms)
+Completed   in 37ms
+
+ActionView::Template::Error (Missing partial cockpit/simpleskin with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml, :haml], :formats=>[:html], :locale=>[:pl, :pl]} in view paths "c:/Users/Bangeusz/Moje dokumenty/bsrp/app/views"):
+    1: ﻿-title "Zmiana ubrania > Bayside Role Play"
+    2: %h1 Zmiana ubrania
+    3: =render 'simpleskin'
+  app/views/cockpit/skins.html.haml:3:in `_app_views_cockpit_skins_html_haml___118898978_27134184_687083392'
+
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.0ms)
+Rendered c:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:35:32 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (37.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (66.0ms)
+Completed 200 OK in 96ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:35:46 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (24.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (66.0ms)
+Completed 200 OK in 152ms (Views: 82.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:36:02 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (52.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (82.0ms)
+Completed 200 OK in 114ms (Views: 95.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:36:07 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (22.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (63.0ms)
+Completed 200 OK in 140ms (Views: 76.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:36:09 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (52.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (85.0ms)
+Completed 200 OK in 130ms (Views: 103.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:36:26 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (21.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (62.0ms)
+Completed 200 OK in 118ms (Views: 75.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:36:30 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (33.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (27.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (86.0ms)
+Completed 200 OK in 130ms (Views: 102.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:36:34 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (48.0ms)
+Completed 200 OK in 103ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:36:41 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (33.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 96ms (Views: 76.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:36:44 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 97ms (Views: 79.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:36:53 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (33.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 96ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:37:06 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (68.0ms)
+Completed 200 OK in 98ms (Views: 78.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:37:34 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (33.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 97ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:38:37 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (20.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (48.0ms)
+Completed 200 OK in 98ms (Views: 60.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:38:44 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (32.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 101ms (Views: 76.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:38:51 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (37.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (83.0ms)
+Completed 200 OK in 114ms (Views: 95.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:39:25 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (32.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 97ms (Views: 76.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:39:31 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (43.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (100.0ms)
+Completed 200 OK in 146ms (Views: 118.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:39:41 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (22.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 114ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:41:30 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (53.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (6.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (86.0ms)
+Completed 200 OK in 131ms (Views: 103.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:42:29 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (23.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 96ms (Views: 75.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:43:15 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (54.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (85.0ms)
+Completed 200 OK in 116ms (Views: 97.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:43:21 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (18.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (23.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 117ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:44:13 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (33.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 96ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:44:20 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (67.0ms)
+Completed 200 OK in 102ms (Views: 78.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:44:26 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (1.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (32.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (64.0ms)
+Completed 200 OK in 95ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:44:32 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (0.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (52.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (7.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (83.0ms)
+Completed 200 OK in 114ms (Views: 95.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/kokpit/ubranie" for 127.0.0.1 at 2011-11-06 12:44:38 +0100
+  Processing by CockpitController#skins as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 4 LIMIT 1
+Rendered cockpit/_simpleskin.html.erb (0.0ms)
+  [1m[36mSlug Load (1.0ms)[0m  [1mSELECT "slugs".* FROM "slugs" WHERE ("slugs".sluggable_id = 4 AND "slugs".sluggable_type = 'Player') ORDER BY id DESC LIMIT 1[0m
+Rendered layouts/home/_header.html.haml (17.0ms)
+Rendered layouts/home/_sidecockpit.html.haml (22.0ms)
+Rendered cockpit/skins.html.haml within layouts/cockpit (65.0ms)
+Completed 200 OK in 153ms (Views: 81.0ms | ActiveRecord: 2.0ms)
