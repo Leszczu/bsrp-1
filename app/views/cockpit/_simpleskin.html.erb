@@ -71,4 +71,7 @@ $(document).ready(function(){
 
 <br />
 <br />
-<INPUT type="submit" value="Ustaw ubranie">
+<% form_for @player do |f| %>
+<%= f.hidden_field(:skin, :value => 1) %>
+<%= f.submit %>
+<% end %>
