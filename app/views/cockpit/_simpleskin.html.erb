@@ -7,9 +7,10 @@ $(document).ready(function(){
 			$(this).animate({opacity: 0.67 }, 500);
 			wybranyskin = $(this).attr("id");
 			$('#skin').val('value', wybranyskin);
-			alert(wybranyskin);
+			$('#player_skin').val(wybranyskin);
 		});
 });
+
 </script>
 <img src="http://wiki.sa-mp.com/wroot/images2/2/2e/Skin_1.png" class="skins"  id="1" />
 <img src="http://wiki.sa-mp.com/wroot/images2/1/10/Skin_2.png" class="skins"  id="2" />
@@ -72,6 +73,6 @@ $(document).ready(function(){
 <br />
 <br />
 <% form_for @player do |f| %>
-<%= f.hidden_field(:skin, :value => 1) %>
+<%= f.hidden_field(:skin) %>
 <%= f.submit %>
 <% end %>
