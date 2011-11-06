@@ -22,10 +22,10 @@
     end
   end
   
-  def change_password
-    password, password_confirmation = params[:player][:password], params[:player][:password_confirmation]
-    current_player.change_password(password, password_confirmation)
-  end
+  #def change_password
+  #  password, password_confirmation = params[:player][:password], params[:player][:password_confirmation]
+  #  current_player.change_password(password, password_confirmation)
+  #end
   
   def edit
     @player = current_player
@@ -35,7 +35,10 @@
     @player = current_player
       if @player.update_attributes(params[:player])
         flash[:notice] = 'Zmiany zakończone powodzeniem.'
-        redirect_to cockpit_path
+        respond_to do |format|
+          format.html { redirect_to cockpit_path }
+          format.js
+        end
       else
         flash[:error] = "Napotkano problem #{@player.errors.inspect}"
         redirect_to cockpit_path
