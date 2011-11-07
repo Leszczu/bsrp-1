@@ -1,3 +1,44 @@
 ﻿-title 'Kokpit Gracza > Bayside Role Play'
 %h1 Kokpit gracza
-.vehicles{:style => 'text-align: center;'} W kokpicie będą widoczne najważniejsze atuty gracza (pieniądze, czas gry itd.)
+.cockpit
+	%b Pieniądze w portfelu
+	.left{:style => 'text-align: right'}
+		=current_player.cash
+		\$
+.cockpit
+	%b Pieniądze w banku
+	.left{:style => 'text-align: right'}
+		=current_player.bank
+		\$
+.cockpit
+	%b Wypłata
+	.left{:style => 'text-align: right'}
+		500 $
+.cockpit
+	%b Czas gry
+	.left{:style => 'text-align: right'}
+		50h, 20m
+.cockpit
+	%b Organizacja
+	.left{:style => 'text-align: right'}
+		=organization(current_player)
+.cockpit
+	%b Stanowisko
+	.left{:style => 'text-align: right'}
+		=organizationrank(current_player)
+.cockpit
+	%b Praca
+	.left{:style => 'text-align: right'}
+		=job(current_player)
+.cockpit
+	%b Ostrzeżeń
+	.left{:style => 'text-align: right'}
+		Brak
+.cockpit
+	%b Stan materialny
+	.left{:style => 'text-align: right'}
+		=materials(current_player)
+.cockpit
+	%b Ranga
+	.left{:style => 'text-align: right'}
+		=opinion(current_player)
