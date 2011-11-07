@@ -8,6 +8,19 @@
 				'nieaktywne'
 		end
 	end
+	
+	def warns(player)
+		case player.warns
+			when 1
+				'Brak'
+			when 2
+				2
+			when 3
+				3
+			else
+				0
+		end
+	end
 
 	def organization(player)
 		case player.organization

@@ -1,16 +1,16 @@
 class AddVariablesToPlayer < ActiveRecord::Migration
   def self.up
-    add_column :players, :kp, :integer
-    add_column :players, :cash, :integer
-    add_column :players, :bank, :integer
-    add_column :players, :job, :integer
-    add_column :players, :job_level, :integer
-    add_column :players, :organization, :integer
-    add_column :players, :rank, :integer
-    add_column :players, :player_level, :integer
+    add_column :players, :kp, :integer, :default => 0
+    add_column :players, :cash, :integer, :default => 500
+    add_column :players, :bank, :integer, :default => 1000
+    add_column :players, :job, :integer, :default => 0
+    add_column :players, :job_level, :integer, :default => 0
+    add_column :players, :organization, :integer, :default => 0
+    add_column :players, :rank, :integer, :default => 0
+    add_column :players, :player_level, :integer, :default => 1
     add_column :players, :skype, :string
     add_column :players, :gadu, :integer
-    add_column :players, :signature, :text
+    add_column :players, :signature, :text, :limit => 120
   end
 
   def self.down

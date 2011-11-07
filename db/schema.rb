@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111107143812) do
+ActiveRecord::Schema.define(:version => 20111107161328) do
 
   create_table "comments", :force => true do |t|
     t.integer  "news_id"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20111107143812) do
   end
 
   create_table "players", :force => true do |t|
-    t.string   "name"
+    t.string   "name",                :limit => 40
     t.string   "password_hash"
     t.string   "password_salt"
     t.datetime "created_at"
@@ -41,17 +41,20 @@ ActiveRecord::Schema.define(:version => 20111107143812) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.integer  "skin"
-    t.integer  "kp"
-    t.integer  "cash"
-    t.integer  "bank"
-    t.integer  "job"
-    t.integer  "job_level"
-    t.integer  "organization"
-    t.integer  "rank"
-    t.integer  "player_level"
+    t.integer  "kp",                                 :default => 0
+    t.integer  "cash",                               :default => 500
+    t.integer  "bank",                               :default => 1000
+    t.integer  "job",                                :default => 0
+    t.integer  "job_level",                          :default => 0
+    t.integer  "organization",                       :default => 0
+    t.integer  "rank",                               :default => 0
+    t.integer  "player_level",                       :default => 1
     t.string   "skype"
     t.integer  "gadu"
-    t.text     "signature"
+    t.text     "signature",           :limit => 120
+    t.integer  "hours",                              :default => 0
+    t.integer  "minutes",                            :default => 0
+    t.integer  "warns",                              :default => 0
   end
 
   create_table "slugs", :force => true do |t|

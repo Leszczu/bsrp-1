@@ -17,7 +17,10 @@
 .cockpit
 	%b Czas gry
 	.left{:style => 'text-align: right'}
-		50h, 20m
+		=current_player.hours
+		\h,
+		=current_player.minutes
+		\m
 .cockpit
 	%b Organizacja
 	.left{:style => 'text-align: right'}
@@ -33,7 +36,7 @@
 .cockpit
 	%b Ostrzeżeń
 	.left{:style => 'text-align: right'}
-		Brak
+		=warns(current_player)
 .cockpit
 	%b Stan materialny
 	.left{:style => 'text-align: right'}
