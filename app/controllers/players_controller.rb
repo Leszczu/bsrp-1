@@ -35,12 +35,13 @@
     @player = current_player
       if @player.update_attributes(params[:player])
         respond_to do |format|
+          flash[:notice] = "Zmiany zostały zapisane pomyślnie!"
           format.html { redirect_to(:back) }
           format.js
         end
       else
         flash[:error] = "Napotkano problem #{@player.errors.inspect}"
-        redirect_to cockpit_path
+        redirect_to(:back)
     end
   end
 
