@@ -1,3 +1,15 @@
--title "Ustawienia profilu > Bayside Role Play"
+﻿-title "Ustawienia profilu > Bayside Role Play"
 %h1 Ustawienia profilu publicznego
-.vehicles{:style => 'text-align: center;'} W przygotowaniu.
+.vehicles
+	-form_for @player do |f|
+		%table
+			%tr
+				%td= f.label 'Gadu-Gadu:'
+				%td= f.text_field :gadu
+			%tr
+				%td= f.label 'Skype:'
+				%td= f.text_field :skype
+			%tr
+				%td= f.label 'Podpis:'
+				%td= f.text_area :signature, :cols => 50, :rows => 8
+			%td= submit_tag "Aktualizuj profil"

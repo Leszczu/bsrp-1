@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111106154340) do
+ActiveRecord::Schema.define(:version => 20111107143812) do
 
   create_table "comments", :force => true do |t|
     t.integer  "news_id"
@@ -41,6 +41,17 @@ ActiveRecord::Schema.define(:version => 20111106154340) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.integer  "skin"
+    t.integer  "kp"
+    t.integer  "cash"
+    t.integer  "bank"
+    t.integer  "job"
+    t.integer  "job_level"
+    t.integer  "organization"
+    t.integer  "rank"
+    t.integer  "player_level"
+    t.string   "skype"
+    t.integer  "gadu"
+    t.text     "signature"
   end
 
   create_table "slugs", :force => true do |t|

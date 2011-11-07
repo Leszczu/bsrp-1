@@ -11,11 +11,11 @@
   end
 
   def profile
+    @player = current_player
   end
 
   def skins
     @player = current_player
-    @skin = params[:skin]
   end
 
   def change_password
