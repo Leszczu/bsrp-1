@@ -1,2 +1,57 @@
-%h1 Organizacje
-
+﻿%h1 Organizacje
+%table.tablesorter{:cellspacing => "1"}
+	%thead
+		%tr
+			%th.header.headerSortUp Bayside Police Department
+			%th.header Stanowisko
+	%tbody
+	- @police.each do |f|
+		%tr
+			%td
+				%strong
+					%em=f.name
+			%td
+				%strong
+					%em=organizationrank(f)
+%table.tablesorter{:cellspacing => "1"}
+	%thead
+		%tr
+			%th.header.headerSortUp Bayside Fire Department
+			%th.header Stanowisko
+	%tbody
+	- @fire.each do |f|
+		%tr
+			%td
+				%strong
+					%em=f.name
+			%td
+				%strong
+					%em=organizationrank(f)
+%table.tablesorter{:cellspacing => "1"}
+	%thead
+		%tr
+			%th.header.headerSortUp Urząd Bayside
+			%th.header Stanowisko
+	%tbody
+	- @government.each do |f|
+		%tr
+			%td
+				%strong
+					%em=f.name
+			%td
+				%strong
+					%em=organizationrank(f)
+%table.tablesorter{:cellspacing => "1"}
+	%thead
+		%tr
+			%th.header.headerSortUp Bayside News FM
+			%th.header Stanowisko
+	%tbody
+	- @bsn.each do |f|
+		%tr
+			%td
+				%strong
+					%em=f.name
+			%td
+				%strong
+					%em=organizationrank(f)

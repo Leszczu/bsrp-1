@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111107161328) do
+ActiveRecord::Schema.define(:version => 20111107163805) do
 
   create_table "comments", :force => true do |t|
     t.integer  "news_id"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20111107161328) do
     t.integer  "hours",                              :default => 0
     t.integer  "minutes",                            :default => 0
     t.integer  "warns",                              :default => 0
+    t.integer  "sex"
   end
 
   create_table "slugs", :force => true do |t|
