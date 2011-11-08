@@ -10,8 +10,9 @@
     
   def show
     @player = Player.find(params[:cached_slug])
+    @comments = Comment.find_by_sql("SELECT * FROM comments where player_id = #{@player.id} LIMIT 5")
   end
-  
+
   def create
     @player = Player.new(params[:player])
     if @player.save
