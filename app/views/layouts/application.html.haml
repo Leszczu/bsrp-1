@@ -13,14 +13,13 @@
           -if flash[:notice]
             :javascript
                 $(document).ready(function(){
-                jAlert('Operacja zakończona powodzeniem :)', 'Powodzenie');
+                jAlert('#{flash[:notice]}', 'Powodzenie');
                 });
           -elsif flash[:error]
             :javascript
                 $(document).ready(function(){
-                jAlert('Operacja nie powiodła się.', 'Niepowodzenie');
+                jAlert('#{flash[:error]}', 'Niepowodzenie');
                 });
-            %br
           = yield
         #side_menu
           =render :partial => "layouts/home/side"

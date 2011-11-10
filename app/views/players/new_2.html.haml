@@ -1,0 +1,7 @@
+﻿%h1 Rejestracja - Quiz - (2/3)
+=simple_form_for "quiz", :url => register_3_path do |quiz|
+	-@questions.each do |question|
+		=quiz.simple_fields_for "#{question.id}" do |q|
+			%p=question.question
+			%p=q.input "answer", :label => "", :as => :radio, :collection => question.answers.map{|x| [x.answer, x.id]}
+	=quiz.button :submit

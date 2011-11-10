@@ -1,0 +1,14 @@
+﻿%h1 Rejestracja - Dane konta - (3/3)
+%p Wpisz swoje piękne dane, by założyć konto.
+= form_for @player do |f|
+	%table
+		%tr
+			%td= f.label 'Imię oraz nazwisko postaci'
+			%td= f.text_field :name
+		%tr
+			%td= f.label 'Hasło postaci'
+			%td= f.password_field :password
+		%tr
+			%td= f.label 'Poprawność hasła postaci'
+			%td= f.password_field :password_confirmation
+		%td= submit_tag "Stwórz postać!"

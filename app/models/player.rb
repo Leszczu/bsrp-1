@@ -1,6 +1,6 @@
 ﻿class Player < ActiveRecord::Base
   attr_accessible :name, :password, :password_confirmation, :on => :create
-  attr_accessible :avatar, :skin, :gadu, :skype, :signature
+  attr_accessible :avatar, :skin, :gadu, :skype, :signature, :answer
   has_friendly_id :name, :use_slug => true
   attr_accessor :password, :new_password, :new_password_confirmation
   before_save :encrypt_password

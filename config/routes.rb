@@ -18,10 +18,17 @@ Bsrp::Application.routes.draw do
   match 'news/:cached_slug' => 'news#show', :as => :show
 
   # Konta
-  match 'konto/rejestracja' => 'players#new', :as => :register
   match 'konto/logowanie' => 'sessions#new', :as => :login
   match 'konto/wyloguj' => 'sessions#destroy', :as => :logout
   match 'konto/:cached_slug' => 'players#show', :as => :playershow
+  
+  # Rejestracja
+  match 'rejestracja/1' => 'players#new_1', :as => :register_1
+  match 'rejestracja/2' => 'players#new_2', :as => :register_2
+  match 'rejestracja/3' => 'players#new_3', :as => :register_3
+  match 'rejestracja/4' => 'players#new_3', :as => :register_4
+
+  match 'rejestracja' => 'players#new', :as => :register
   
   # Kokpit
   match 'kokpit' => 'cockpit#index', :as => :cockpit
