@@ -11,4 +11,5 @@
 		%tr
 			%td= f.label 'Poprawność hasła postaci'
 			%td= f.password_field :password_confirmation
-		%td= submit_tag "Stwórz postać!"
+		%td= link_to submit_tag('< Powrót do poprzedniego etapu'), register_2_path
+		%td= submit_tag "Stwórz swoją postać >"

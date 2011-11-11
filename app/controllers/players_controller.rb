@@ -1,16 +1,19 @@
 ﻿class PlayersController < ApplicationController
 
   def new_1
+    if request.post?
+      session['register'] = 1
+    end
   end
 
   def new_2
-      @questions = Question.limit(10)
-      #@questioncount = rand(@question.count)
-      # jeśli wszystkie odpowiedzi będą poprawne, to ustawiaj sesję na wartość '2'
+    @questions = Question.limit(10)
+    session['register'] = 2
+    #@questioncount = rand(@question.count)
+    # jeśli wszystkie odpowiedzi będą poprawne, to ustawiaj sesję na wartość '2'
   end
 
   def new_3
-    
     bad_one = []
     if request.post?
       params[:quiz].each do |k,v|
@@ -23,7 +26,7 @@
       end
       if bad_one.empty?
         flash[:notice] = "Quiz został poprawnie rozwiązany"
-        session['register'] = 1
+        session['register'] = 3
       else 
         flash[:error] = "Quiz został błędnie rozwiązany"
         redirect_to register_2_path
@@ -40,10 +43,8 @@
   #end
   end
   
-  
-
   def new
-    @player = Player.new
+    redirect_to register_1_path
   end
   
   def playershow

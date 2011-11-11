@@ -23,12 +23,12 @@ Bsrp::Application.routes.draw do
   match 'konto/:cached_slug' => 'players#show', :as => :playershow
   
   # Rejestracja
-  match 'rejestracja/1' => 'players#new_1', :as => :register_1
-  match 'rejestracja/2' => 'players#new_2', :as => :register_2
-  match 'rejestracja/3' => 'players#new_3', :as => :register_3
-  match 'rejestracja/4' => 'players#new_3', :as => :register_4
+  match 'konto/rejestracja/1' => 'players#new_1', :as => :register_1
+  match 'konto/rejestracja/2' => 'players#new_2', :as => :register_2
+  match 'konto/rejestracja/3' => 'players#new_3', :as => :register_3
+  match 'konto/rejestracja/4' => 'players#new_3', :as => :register_4
 
-  match 'rejestracja' => 'players#new', :as => :register
+  match 'konto/rejestracja/1' => 'players#new', :as => :register
   
   # Kokpit
   match 'kokpit' => 'cockpit#index', :as => :cockpit

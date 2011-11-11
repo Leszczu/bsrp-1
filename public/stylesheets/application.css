@@ -28,6 +28,9 @@ img {
   text-align: left;
   width: 670px; }
 
+label {
+  display: block; }
+
 #side_menu {
   background-color: #eff5ff;
   border-left: 1px solid #cfe2ff;
