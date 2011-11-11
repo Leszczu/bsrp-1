@@ -28,8 +28,20 @@ img {
   text-align: left;
   width: 670px; }
 
-label {
+.question {
+  border-bottom: 1px dashed gray;
+  padding: 3px;
+  padding-bottom: 5px; }
+
+span {
+  padding: 5px;
   display: block; }
+
+label.radio.required {
+  display: none; }
+
+label.collection_radio {
+  padding-left: 2px; }
 
 #side_menu {
   background-color: #eff5ff;
