@@ -28,6 +28,7 @@ img {
   text-align: left;
   width: 670px; }
 
+<<<<<<< HEAD
 .question {
   color: #666666;
   font-size: 16px;
@@ -64,6 +65,11 @@ label.radio.required {
 label.collection_radio {
   padding-left: 3px; }
 
+=======
+label {
+  display: block; }
+
+>>>>>>> 7ab799e... updates
 #side_menu {
   background-color: #eff5ff;
   border-left: 1px solid #cfe2ff;
