@@ -25,7 +25,6 @@
   
       end
       if bad_one.empty?
-        flash[:notice] = "Quiz został poprawnie rozwiązany"
         session['register'] = 3
       else 
         flash[:error] = "Quiz został błędnie rozwiązany"

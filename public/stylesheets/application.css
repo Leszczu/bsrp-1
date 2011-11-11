@@ -29,19 +29,40 @@ img {
   width: 670px; }
 
 .question {
-  border-bottom: 1px dashed gray;
-  padding: 3px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  border-bottom: 1px dashed;
   padding-bottom: 5px; }
 
 span {
   padding: 5px;
   display: block; }
 
+.quiz {
+  display: block;
+  background: #e5eeed;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px; }
+
+#quizsubmit {
+  display: block;
+  background: #e5eeed;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px; }
+
 label.radio.required {
   display: none; }
 
 label.collection_radio {
-  padding-left: 2px; }
+  padding-left: 3px; }
 
 #side_menu {
   background-color: #eff5ff;
