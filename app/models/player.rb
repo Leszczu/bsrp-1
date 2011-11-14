@@ -30,6 +30,25 @@
   #  end
   #end
   
+  def send_password_reset
+    generate_token(:password_reset_token)
+    self.password_reset_sent_at = Time.zone.now
+    save!
+    PlayerMailer.password_reset(self).deliver
+  end
+  
+  def active_send
+    generate_token(:active_send)
+    save!
+    PlayerMailer.active_send(self).deliver
+  end
+  
+  def generate_token(column)
+  begin
+    self[column] = SecureRandom.urlsafe_base64
+  end while Player.exists?(column => self[column])
+  end
+  
   #def change_password
   #  password, password_confirmation = params[:player][:password], params[:player][:password_confirmation]
   #  current_player.change_password(password, password_confirmation)

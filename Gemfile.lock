@@ -96,7 +96,7 @@ DEPENDENCIES
   haml
   jquery-rails
   paperclip (~> 2.4)
-  rails (= 3.0.7)
+  rails (~> 3.0.7)
   sass
   simple_form
   sqlite3

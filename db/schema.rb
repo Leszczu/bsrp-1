@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111110182442) do
+ActiveRecord::Schema.define(:version => 20111111192056) do
 
   create_table "answers", :force => true do |t|
     t.integer  "question_id"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(:version => 20111110182442) do
   end
 
   create_table "players", :force => true do |t|
-    t.string   "name",                :limit => 40
+    t.string   "name",                   :limit => 40
     t.string   "password_hash"
     t.string   "password_salt"
     t.datetime "created_at"
@@ -49,26 +49,31 @@ ActiveRecord::Schema.define(:version => 20111110182442) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.integer  "skin"
-    t.integer  "kp",                                 :default => 0
-    t.integer  "cash",                               :default => 500
-    t.integer  "bank",                               :default => 1000
-    t.integer  "job",                                :default => 0
-    t.integer  "job_level",                          :default => 0
-    t.integer  "organization",                       :default => 0
-    t.integer  "rank",                               :default => 0
-    t.integer  "player_level",                       :default => 1
+    t.integer  "kp",                                    :default => 0
+    t.integer  "cash",                                  :default => 500
+    t.integer  "bank",                                  :default => 1000
+    t.integer  "job",                                   :default => 0
+    t.integer  "job_level",                             :default => 0
+    t.integer  "organization",                          :default => 0
+    t.integer  "rank",                                  :default => 0
+    t.integer  "player_level",                          :default => 1
     t.string   "skype"
     t.integer  "gadu"
-    t.text     "signature",           :limit => 120
-    t.integer  "hours",                              :default => 0
-    t.integer  "minutes",                            :default => 0
-    t.integer  "warns",                              :default => 0
+    t.text     "signature",              :limit => 120
+    t.integer  "hours",                                 :default => 0
+    t.integer  "minutes",                               :default => 0
+    t.integer  "warns",                                 :default => 0
     t.integer  "sex"
+    t.string   "email"
+    t.integer  "active",                                :default => 0
+    t.string   "auth_token"
+    t.string   "password_reset_token"
+    t.datetime "password_reset_sent_at"
   end
 
   create_table "questions", :force => true do |t|
     t.string   "question"
-    # t.integer  "answer_id"
+    t.integer  "answer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

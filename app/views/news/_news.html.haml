@@ -14,4 +14,4 @@
     =link_to "Przeczytaj komentarze (#{news.comments.size})", show_path(news.cached_slug)+'#comments'
   %br
   =#(#{news.comment.size})
-%div.left= paginate @news
+= paginate @news

@@ -1,4 +1,6 @@
 Bsrp::Application.routes.draw do
+  get "password_resets/new"
+
   # Resources
   resources :players
   resources :sessions

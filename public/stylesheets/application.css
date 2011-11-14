@@ -40,6 +40,15 @@ span {
   padding: 5px;
   display: block; }
 
+.pagination {
+  float: right; }
+  .pagination span.previous_page.disabled {
+    display: inline;
+    padding: 0; }
+  .pagination span.next_page.disabled {
+    display: inline;
+    padding: 0; }
+
 .quiz {
   display: block;
   background: #e5eeed;
@@ -48,15 +57,6 @@ span {
   border-radius: 5px;
   padding: 15px;
   margin: 5px; }
-
-#quizsubmit {
-  display: block;
-  background: #e5eeed;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px; }
 
 label.radio.required {
   display: none; }
