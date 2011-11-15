@@ -1,14 +1,10 @@
 ﻿class PlayersController < ApplicationController
 
   def new_1
-    if request.post?
-      session['register'] = 1
-    end
   end
 
   def new_2
     @questions = Question.limit(10)
-    session['register'] = 2
     #@questioncount = rand(@question.count)
     # jeśli wszystkie odpowiedzi będą poprawne, to ustawiaj sesję na wartość '2'
   end
@@ -25,7 +21,6 @@
   
       end
       if bad_one.empty?
-        session['register'] = 3
       else 
         flash[:error] = "Quiz został błędnie rozwiązany"
         redirect_to register_2_path
