@@ -10,8 +10,9 @@
   end
 
   def new_3
-    bad_one = []
+
     if request.post?
+      bad_one = []
       params[:quiz].each do |k,v|
         question = Question.find(k)
         answer = question.answers.find(v[:answer])
@@ -21,6 +22,7 @@
   
       end
       if bad_one.empty?
+      
       else 
         flash[:error] = "Quiz został błędnie rozwiązany"
         redirect_to register_2_path
