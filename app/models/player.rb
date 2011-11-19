@@ -62,7 +62,7 @@
   #  end
   #end
 
-  def self.authenticate(name, password)
+ def self.authenticate(name, password)
     player = find_by_name(name)
     if player && player.password_hash == BCrypt::Engine.hash_secret(password, player.password_salt)
       player
@@ -70,7 +70,7 @@
       nil
     end
   end
-  
+
   def encrypt_password
     if password.present?
       self.password_salt = BCrypt::Engine.generate_salt
@@ -79,9 +79,8 @@
   end
 
   private
-  
+
   def get_password_hash(password)
     BCrypt::Engine.hash_secret(password, self.password_salt)
   end
-
 end

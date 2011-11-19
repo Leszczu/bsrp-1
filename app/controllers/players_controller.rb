@@ -19,18 +19,17 @@
         if answer.correct.to_i == 0
           bad_one << question.question
         end
-  
       end
+    end
+    
       if bad_one.empty?
-      
+        
       else 
         flash[:error] = "Quiz został błędnie rozwiązany"
         redirect_to register_2_path
       end
+      
     else
-      redirect_to register_2_path
-    end
-    
     @player = Player.new
     
     #if session['register'] != 2
