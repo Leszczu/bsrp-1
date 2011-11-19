@@ -1,18 +1,17 @@
 ﻿%h1 Rejestracja - Quiz - (2/3)
 =simple_form_for "quiz", :url => register_3_path do |quiz|
 	-@questions.each do |question|
-<<<<<<< HEAD
+
 		=quiz.simple_fields_for "#{question.id}" do |q|
 			.question="# " + question.question
 			=q.input "answer", :label => "", :as => :radio, :collection => question.answers.map{|x| [x.answer, x.id]}
 	.quiz
 		= link_to submit_tag('< Powrót do poprzedniego etapu'), register_1_path
 		=quiz.button :submit, 'Przejdź do następnego etapu >'
-=======
+
 		.comment
 			=quiz.simple_fields_for "#{question.id}" do |q|
 				%p=question.question
 				=q.input "answer", :label => "", :as => :radio, :collection => question.answers.map{|x| [x.answer, x.id]}
 	= link_to submit_tag('< Powrót do poprzedniego etapu'), register_1_path
 	=quiz.button :submit, 'Przejdź do następnego etapu >'
->>>>>>> 7ab799e... updates
